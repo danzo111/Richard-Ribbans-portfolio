@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Richard Ribbans · Land Surveyor &amp; Drone Pilot</title>
+<meta name="description" content="Richard Ribbans is a geomatics graduate, candidate land surveyor and licensed drone pilot in the Western Cape. He flew ground-penetrating radar over Antarctica’s Fimbul Ice Shelf and built a 3D model of its crevasses.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#060E16">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Richard Ribbans · Land Surveyor &amp; Drone Pilot">
+<meta property="og:description" content="Candidate land surveyor and drone pilot. Drone-borne radar on an Antarctic ice shelf, LiDAR, photogrammetry and field surveying.">
+<meta property="og:image" content="assets/fimbul-locality-plan.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23060E16'/%3E%3Cpath d='M5 21h22' stroke='%23EAF2F6' stroke-width='2'/%3E%3Cpath d='M11 27l3-13 3 13zM19 27l2-9 2 9z' fill='%23FF6B2C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Hanken+Grotesk:wght@400..700&family=Instrument+Serif:ital@0;1&family=Spline+Sans+Mono:wght@400..600&display=swap">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Richard Ribbans","jobTitle":"Candidate Land Surveyor and Drone Pilot","email":"mailto:ricrib@hotmail.co.za","alumniOf":"University of Cape Town","address":{"@type":"PostalAddress","addressLocality":"Raithby","addressRegion":"Western Cape","addressCountry":"ZA"},"sameAs":["https://www.linkedin.com/in/richard-ribbans-9211b8159"]}</script>
+<style>
+:root{
+  /* Polar night: near-black navy, glacier-blue for data, hi-vis survey orange for anything you act on. */
+  --bg:#060E16; --bg-2:#0A1722; --snow:#0C1B28; --card:rgba(255,255,255,.035); --card-2:rgba(255,255,255,.06);
+  --stroke:rgba(160,205,228,.14); --stroke-2:rgba(160,205,228,.26);
+  --ink:#EAF2F6; --ink-2:#A9BDC9; --ink-3:#7C93A2;
+  --glacier:#8FD3EE; --glacier-dim:rgba(143,211,238,.14);
+  --flag:#FF8850; --flag-fill:#FF6B2C; --flag-ink:#1A0A02; --flag-wash:rgba(255,107,44,.07);
+  --ocean:#0A2B3F; --firn:#102738; --line:rgba(160,205,228,.10);
+  --glow-a:rgba(60,150,190,.22); --glow-b:rgba(255,107,44,.10);
+  --shadow:0 30px 80px -30px rgba(0,0,0,.7);
+  --veil:rgba(8,18,27,.72);
+
+  --f-display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --f-serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --f-body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"Spline Sans Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+  --wrap:1180px; --gutter:clamp(18px,4vw,44px); --r:20px; --r-sm:12px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#F2F6F8; --bg-2:#E8EFF2; --snow:#FFFFFF; --card:rgba(255,255,255,.72); --card-2:rgba(255,255,255,.95);
+    --stroke:rgba(10,28,42,.10); --stroke-2:rgba(10,28,42,.22);
+    --ink:#0A1C2A; --ink-2:#40576A; --ink-3:#5C7384;
+    --glacier:#13678A; --glacier-dim:rgba(19,103,138,.12);
+    --flag:#B93A08; --flag-fill:#E8551C; --flag-ink:#FFF8F3; --flag-wash:rgba(232,85,28,.06);
+    --ocean:#CDE0EA; --firn:#F9FCFD; --line:rgba(10,28,42,.07);
+    --glow-a:rgba(80,170,210,.22); --glow-b:rgba(255,120,60,.12);
+    --shadow:0 30px 70px -34px rgba(10,40,60,.35);
+    --veil:rgba(242,246,248,.75);
+    color-scheme:light;
+  }
+}
+:root[data-theme="light"]{
+  --bg:#F2F6F8; --bg-2:#E8EFF2; --snow:#FFFFFF; --card:rgba(255,255,255,.72); --card-2:rgba(255,255,255,.95);
+  --stroke:rgba(10,28,42,.10); --stroke-2:rgba(10,28,42,.22);
+  --ink:#0A1C2A; --ink-2:#40576A; --ink-3:#5C7384;
+  --glacier:#13678A; --glacier-dim:rgba(19,103,138,.12);
+  --flag:#B93A08; --flag-fill:#E8551C; --flag-ink:#FFF8F3; --flag-wash:rgba(232,85,28,.06);
+  --ocean:#CDE0EA; --firn:#F9FCFD; --line:rgba(10,28,42,.07);
+  --glow-a:rgba(80,170,210,.22); --glow-b:rgba(255,120,60,.12);
+  --shadow:0 30px 70px -34px rgba(10,40,60,.35);
+  --veil:rgba(242,246,248,.75);
+  color-scheme:light;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:96px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:has(dialog[open]){overflow:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+ul,ol,dl,dd,figure,blockquote{margin:0;padding:0}
+ul,ol{list-style:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--flag-fill);outline-offset:3px;border-radius:6px}
+::selection{background:var(--flag-fill);color:var(--flag-ink)}
+.wrap{width:100%;max-width:calc(var(--wrap) + 2*var(--gutter));margin-inline:auto;padding-inline:var(--gutter)}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--flag-fill);color:var(--flag-ink);padding:10px 16px;font-weight:600;text-decoration:none;border-radius:10px}
+.skip:focus{top:12px}
+
+/* Atmosphere: two soft lights and a fine grain, fixed behind everything */
+.atmo{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.atmo::before{content:"";position:absolute;inset:-20%;background:radial-gradient(42% 36% at 18% 12%,var(--glow-a),transparent 70%),radial-gradient(34% 30% at 88% 30%,var(--glow-b),transparent 70%),radial-gradient(50% 40% at 60% 100%,var(--glow-a),transparent 70%);animation:drift 26s ease-in-out infinite alternate}
+.atmo::after{content:"";position:absolute;inset:0;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes drift{to{transform:translate3d(3%,-2%,0) scale(1.06)}}
+.progress{position:fixed;left:0;top:0;height:2px;width:100%;z-index:120;background:linear-gradient(90deg,var(--glacier),var(--flag-fill));transform-origin:0 50%;transform:scaleX(0)}
+
+/* Type */
+.mono{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--flag)}
+.kicker::before{content:"";width:22px;height:1px;background:currentColor}
+.h2{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:clamp(2.3rem,5.4vw,4.2rem);line-height:1;letter-spacing:-.035em}
+.h2 em,.hero-tag em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--glacier)}
+.lede{font-size:clamp(1.08rem,1.5vw,1.25rem);line-height:1.55;color:var(--ink-2);max-width:60ch}
+
+/* Buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-weight:600;font-size:.98rem;text-decoration:none;border:1px solid var(--stroke-2);background:var(--card);color:var(--ink);cursor:pointer;transition:background .25s,border-color .25s,color .25s,box-shadow .25s,transform .35s var(--ease);-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .3s var(--ease)}
+.btn:hover{border-color:var(--ink);background:var(--card-2)}
+.btn:hover .i-arrow{transform:translate(3px,-3px)}
+.btn:hover .i-down{transform:translateY(3px)}
+.btn-primary{background:var(--flag-fill);border-color:var(--flag-fill);color:var(--flag-ink);box-shadow:0 10px 30px -10px var(--flag-fill)}
+.btn-primary:hover{background:var(--flag-fill);border-color:var(--flag-fill);box-shadow:0 16px 40px -10px var(--flag-fill)}
+.btn-sm{min-height:40px;padding:0 16px;font-size:.86rem}
+
+/* Header: a floating glass bar */
+.head{position:fixed;top:max(14px,env(safe-area-inset-top));left:0;right:0;z-index:100;pointer-events:none}
+.head-in{pointer-events:auto;max-width:calc(var(--wrap) + 24px);margin-inline:auto;width:calc(100% - 2*var(--gutter) + 24px);height:60px;display:flex;align-items:center;gap:14px;padding:0 10px 0 20px;border-radius:999px;background:var(--veil);border:1px solid var(--stroke);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:var(--shadow)}
+.brand{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:1.08rem;letter-spacing:-.02em;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--flag-fill)}
+.nav{margin-left:auto;display:flex;gap:2px}
+.nav a{position:relative;font-size:.9rem;font-weight:500;text-decoration:none;color:var(--ink-2);padding:8px 13px;border-radius:999px;transition:color .2s,background .2s}
+.nav a:hover{color:var(--ink)}
+.nav a.on{color:var(--ink);background:var(--card-2)}
+.theme{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--stroke);border-radius:50%;background:transparent;cursor:pointer;flex:none;transition:border-color .2s,transform .5s var(--ease)}
+.theme:hover{border-color:var(--ink);transform:rotate(180deg)}
+@media (max-width:900px){.nav{display:none}.head-in .btn{margin-left:auto}}
+@media (max-width:420px){.head-in .btn span{display:none}.head-in .btn{padding:0 12px}}
+
+/* Hero */
+.hero{padding:clamp(120px,15vw,170px) 0 0}
+.status{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 12px;border-radius:999px;border:1px solid var(--stroke);background:var(--card);font-size:.86rem;color:var(--ink-2)}
+.status i{width:8px;height:8px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 0 rgba(61,220,151,.6);animation:pulse 2.4s infinite;flex:none}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(61,220,151,0)}100%{box-shadow:0 0 0 0 rgba(61,220,151,0)}}
+.hero-name{margin-top:clamp(18px,2.4vw,28px);font-family:var(--f-display);font-stretch:88%;font-weight:700;font-size:clamp(3.4rem,12.6vw,10.8rem);line-height:.88;letter-spacing:-.03em;margin-left:-.03em}
+.hero-name .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.hero-name .ln>span{display:inline-block}
+.js .hero-name .ln>span{transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+.js .hero-name .ln:nth-child(2)>span{animation-delay:.12s}
+.hero-name b{color:var(--flag-fill);font-weight:700}
+@keyframes rise{to{transform:none}}
+.hero-tag{margin-top:clamp(16px,2vw,26px);font-family:var(--f-display);font-stretch:90%;font-weight:500;font-size:clamp(1.5rem,3.5vw,2.9rem);line-height:1.08;letter-spacing:-.03em;max-width:21ch}
+.hero-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(20px,4vw,56px);align-items:end;margin-top:clamp(20px,2.6vw,32px)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.who{display:flex;align-items:center;gap:14px;padding:10px 22px 10px 10px;border-radius:999px;border:1px solid var(--stroke);background:var(--card)}
+.who img{width:64px;height:64px;border-radius:50%;object-fit:cover;outline:2px solid var(--flag-fill);outline-offset:2px}
+.who b{display:block;font-weight:600;line-height:1.2}
+.who span{display:block;font-size:.84rem;color:var(--ink-3)}
+@media (max-width:820px){.hero-row{grid-template-columns:1fr;align-items:start}.who{justify-self:start}}
+
+/* The sheet: plan above, section below, title block at the foot — laid out the way a survey drawing is. */
+.sheet{position:relative;margin-top:clamp(36px,5vw,64px);border-radius:var(--r);border:1px solid var(--stroke-2);background:var(--snow);box-shadow:var(--shadow),0 0 0 6px var(--card);overflow:hidden}
+.sheet-bar{display:flex;align-items:center;gap:12px;padding:12px 14px 12px 18px;border-bottom:1px solid var(--stroke)}
+.sheet-bar .mono{color:var(--ink-2)}
+.sheet-bar .dot{width:8px;height:8px;border-radius:50%;background:var(--flag-fill);flex:none}
+.sheet-bar button{margin-left:auto}
+.panel{position:relative;border-bottom:1px solid var(--stroke)}
+.panel-tag{position:absolute;left:14px;top:12px;z-index:2;border:1px solid var(--stroke-2);background:var(--veil);border-radius:999px;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;color:var(--ink-2)}
+.panel svg{width:100%;height:auto}
+#section{cursor:ew-resize;touch-action:pan-y}
+.sheet text{font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;fill:var(--ink-2)}
+.sheet .t-strong{fill:var(--ink)}
+.sheet .t-flag{fill:var(--flag)}
+.hit{fill:transparent;stroke:transparent;cursor:pointer;outline-offset:0}
+.site-mark{transition:stroke .2s}
+.hit:hover+.site-mark,.hit:focus-visible+.site-mark{stroke:var(--flag-fill)}
+.tip{position:absolute;z-index:5;pointer-events:none;transform:translate(-50%,calc(-100% - 12px));padding:7px 11px;border-radius:10px;background:var(--ink);color:var(--bg);font-family:var(--f-mono);font-size:.68rem;letter-spacing:.04em;white-space:nowrap;opacity:0;transition:opacity .15s}
+.tip.on{opacity:1}
+.readout{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:11px 18px;border-bottom:1px solid var(--stroke);font-family:var(--f-mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2);min-height:44px}
+.readout b{font-weight:500;color:var(--ink)}
+.readout .state{display:inline-flex;align-items:center;gap:8px}
+.readout .state::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--glacier)}
+.readout .state.hot{color:var(--flag)}
+.readout .state.hot::before{background:var(--flag-fill)}
+.readout .hint{margin-left:auto;color:var(--ink-3)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 22px;padding:10px 18px;border-bottom:1px solid var(--stroke);font-family:var(--f-mono);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend svg{width:26px;height:10px;flex:none}
+.titleblock{display:grid;grid-template-columns:repeat(4,1fr)}
+.titleblock div{padding:16px 18px;border-left:1px solid var(--stroke)}
+.titleblock div:first-child{border-left:0}
+.titleblock dt{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.titleblock dd{font-weight:600;font-size:.98rem;line-height:1.3;margin-top:4px}
+@media (max-width:760px){.titleblock{grid-template-columns:1fr 1fr}.titleblock div:nth-child(3){border-left:0}.titleblock div:nth-child(n+3){border-top:1px solid var(--stroke)}.readout .hint{margin-left:0}}
+.sheet-note{margin-top:14px;font-size:.86rem;color:var(--ink-3);max-width:90ch}
+.trk{fill:none;stroke:var(--glacier);stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s .5s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.drawn .trk{animation:none;stroke-dashoffset:0}
+.drawn .hero-name .ln>span{animation:none;transform:none}
+
+/* Kit marquee */
+.kit-band{margin-top:clamp(56px,8vw,96px);border-block:1px solid var(--stroke);overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.kit-track{display:flex;width:max-content;animation:slide 44s linear infinite}
+.kit-band:hover .kit-track,.kit-band.paused .kit-track{animation-play-state:paused}
+.kit-track ul{display:flex;flex:none}
+.kit-track li{display:flex;align-items:center;gap:28px;padding:18px 14px;font-family:var(--f-display);font-stretch:85%;font-weight:600;font-size:clamp(1.1rem,2vw,1.5rem);letter-spacing:-.02em;color:var(--ink-2);white-space:nowrap}
+.kit-track li::after{content:"";width:7px;height:7px;background:var(--flag-fill);transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* Sections */
+.sec{padding:clamp(72px,10vw,136px) 0 0}
+.sec-head{display:grid;gap:18px;margin-bottom:clamp(30px,4.4vw,56px);justify-items:start}
+
+/* Reveal on scroll (only when JS is running) */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*80ms)}
+.js [data-r].in{opacity:1;transform:none}
+
+/* Cards with a cursor-following light */
+.glass{position:relative;border-radius:var(--r);border:1px solid var(--stroke);background:var(--card);overflow:hidden}
+.glass::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .35s;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),var(--glacier-dim),transparent 65%)}
+.glass:hover{border-color:var(--stroke-2)}
+.glass:hover::before{opacity:1}
+.glass>*{position:relative}
+.lift{transition:opacity .8s var(--ease),transform .5s var(--ease),border-color .3s}
+.js .lift.in:hover,.lift:hover{transform:translateY(-6px)}
+
+.does{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,22px)}
+.does li{padding:clamp(22px,2.6vw,32px);display:grid;gap:12px;align-content:start}
+.does .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--glacier-dim);color:var(--glacier);margin-bottom:8px}
+.does .ico svg{width:24px;height:24px}
+.does h3{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:1.6rem;line-height:1.05;letter-spacing:-.03em}
+.does p{color:var(--ink-2);font-size:1rem}
+.does .kit{margin-top:6px;padding-top:14px;border-top:1px solid var(--stroke);font-family:var(--f-mono);font-size:.7rem;letter-spacing:.03em;color:var(--ink-3);line-height:1.7}
+@media (max-width:860px){.does{grid-template-columns:1fr}}
+
+/* Case study */
+.case{border-radius:var(--r);border:1px solid var(--stroke-2);background:var(--snow);box-shadow:var(--shadow);overflow:hidden}
+.case-head{padding:clamp(22px,3.4vw,44px);border-bottom:1px solid var(--stroke);display:grid;gap:14px}
+.case-head h3{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:clamp(1.9rem,4.4vw,3.3rem);line-height:1;letter-spacing:-.035em;max-width:18ch}
+.case-body{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+.case-fig{border-right:1px solid var(--stroke);padding:clamp(16px,2.4vw,30px);display:flex;flex-direction:column;gap:14px;perspective:1100px}
+.zoom{position:relative;display:block;padding:0;border:1px solid var(--stroke-2);border-radius:var(--r-sm);overflow:hidden;background:#fff;cursor:zoom-in;transition:transform .5s var(--ease),box-shadow .5s;box-shadow:0 20px 50px -24px rgba(0,0,0,.55)}
+.zoom img{width:100%;height:auto}
+.zoom span{position:absolute;right:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(6,14,22,.86);color:#EAF2F6;font-size:.82rem;font-weight:600}
+.zoom span svg{width:15px;height:15px}
+.case-fig figcaption{font-size:.88rem;color:var(--ink-3)}
+.case-text{padding:clamp(22px,3.4vw,44px);display:grid;gap:26px;align-content:start}
+.finding{position:relative;padding:22px 24px;border-radius:var(--r-sm);background:var(--flag-wash);border:1px solid color-mix(in srgb,var(--flag-fill) 34%,transparent)}
+.finding strong{display:block;font-family:var(--f-display);font-stretch:80%;font-weight:700;font-size:clamp(3.2rem,7vw,5.2rem);line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.finding strong small{font-size:.5em;color:var(--flag);letter-spacing:-.02em}
+.finding>span{display:block;margin-top:10px;color:var(--ink-2)}
+
+/* Method stepper */
+.method h4{margin:0 0 14px;font-family:var(--f-mono);font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.method-nav{display:none}
+.js .method-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:18px}
+.method-nav button{position:relative;min-height:44px;padding:14px 0 0;border:0;background:none;text-align:left;cursor:pointer;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);transition:color .2s;touch-action:manipulation}
+.method-nav button::before,.method-nav button::after{content:"";position:absolute;left:0;top:0;height:3px;border-radius:3px;width:100%;background:var(--stroke-2)}
+.method-nav button::after{background:var(--flag-fill);transform:scaleX(0);transform-origin:0 50%}
+.method-nav button.done::after,.method-nav button.on::after{transform:scaleX(1)}
+.method-nav button.on,.method-nav button:hover{color:var(--ink)}
+.method-nav.auto button.on::after{animation:fill 5s linear forwards}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.steps{display:grid;gap:16px}
+.steps li b{display:block;font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:1.3rem;letter-spacing:-.025em;line-height:1.15;margin-bottom:6px}
+.steps li span{color:var(--ink-2)}
+.js .steps{display:block;min-height:9.5em}
+.js .steps li{display:none}
+.js .steps li.on{display:block;animation:stepin .5s var(--ease)}
+@keyframes stepin{from{opacity:0;transform:translateY(10px)}}
+.spec{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--stroke)}
+.spec div{padding:16px clamp(16px,2.4vw,26px);border-left:1px solid var(--stroke)}
+.spec div:first-child{border-left:0}
+.spec dt{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.spec dd{font-weight:600;margin-top:4px;line-height:1.3}
+@media (max-width:920px){.case-body{grid-template-columns:1fr}.case-fig{border-right:0;border-bottom:1px solid var(--stroke)}.spec{grid-template-columns:1fr 1fr}.spec div:nth-child(3){border-left:0}.spec div:nth-child(n+3){border-top:1px solid var(--stroke)}}
+@media (max-width:480px){.method-nav button{font-size:.6rem;letter-spacing:.02em}.js .steps{min-height:12.5em}}
+
+.more{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,22px);margin-top:clamp(14px,2vw,22px)}
+.card{padding:clamp(22px,2.8vw,34px);display:grid;gap:12px;align-content:start}
+.card h3{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:1.65rem;line-height:1.05;letter-spacing:-.03em}
+.card p{color:var(--ink-2)}
+.card .meta{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--flag)}
+@media (max-width:760px){.more{grid-template-columns:1fr}}
+
+/* Flying */
+.fly{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);gap:clamp(14px,2vw,22px);align-items:stretch}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,18px)}
+.num{padding:22px;display:grid;align-content:space-between;gap:18px;min-height:150px}
+.num b{font-family:var(--f-display);font-stretch:80%;font-weight:700;font-size:clamp(2.6rem,5vw,3.8rem);line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.num b small{font-size:.42em;color:var(--ink-3);letter-spacing:-.01em;margin-left:4px}
+.num>span{font-size:.92rem;color:var(--ink-2);line-height:1.35}
+.num.wide{grid-column:1/-1;min-height:0}
+.num.wide b{font-size:1.5rem;letter-spacing:-.03em;line-height:1.1}
+.strip-wrap{padding:clamp(18px,2.6vw,30px);display:flex;flex-direction:column}
+.strip-title{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:20px;color:var(--ink-3)}
+.strip{display:grid;gap:12px}
+.strip-row{display:grid;grid-template-columns:128px 1fr 62px;gap:14px;align-items:center}
+.strip-row .lab{font-size:.94rem;font-weight:600;line-height:1.2}
+.strip-row .tot{font-family:var(--f-mono);font-size:.76rem;color:var(--ink-2);text-align:right;white-space:nowrap}
+.blocks{display:flex;gap:3px;height:26px}
+.blocks i{display:block;height:100%;min-width:3px;border-radius:4px;background:var(--glacier);opacity:.85;transform-origin:0 50%;transition:background .2s,opacity .2s,transform .7s var(--ease);transition-delay:0s,0s,calc(var(--n)*26ms)}
+.js .strip:not(.in) .blocks i{transform:scaleX(0)}
+.blocks i:hover{background:var(--flag-fill);opacity:1}
+.strip-read{margin-top:auto;padding-top:20px;font-family:var(--f-mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3);min-height:4.6em}
+.strip-read b{color:var(--ink);font-weight:500}
+@media (max-width:920px){.fly{grid-template-columns:1fr}}
+@media (max-width:480px){.strip-row{grid-template-columns:88px 1fr 52px;gap:8px}.strip-row .lab{font-size:.84rem}}
+
+/* Experience timeline */
+.xp{position:relative;padding-left:34px}
+.xp::before,.xp-fill{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;border-radius:2px;background:var(--stroke)}
+.xp-fill{background:linear-gradient(180deg,var(--flag-fill),var(--glacier));transform-origin:50% 0;transform:scaleY(0)}
+.xp li{position:relative;display:grid;grid-template-columns:180px minmax(0,1fr);gap:6px 32px;padding:22px 0;border-bottom:1px solid var(--stroke)}
+.xp li:last-of-type{border-bottom:0}
+.xp li::before{content:"";position:absolute;left:-34px;top:29px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--stroke-2);transition:border-color .4s,background .4s,box-shadow .4s}
+.xp li.lit::before{border-color:var(--flag-fill);background:var(--flag-fill);box-shadow:0 0 0 5px var(--flag-wash)}
+.xp .when{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding-top:5px}
+.xp h3{font-size:1.18rem;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.xp .org{color:var(--flag);font-weight:600}
+.xp p{color:var(--ink-2);margin-top:6px;max-width:66ch}
+@media (max-width:720px){.xp li{grid-template-columns:1fr}}
+
+.quote{margin-top:clamp(40px,6vw,80px);padding:clamp(28px,5vw,64px);display:grid;gap:18px}
+.quote blockquote{font-family:var(--f-serif);font-style:italic;font-size:clamp(2rem,5vw,3.9rem);line-height:1.05;letter-spacing:-.015em;max-width:20ch}
+.quote blockquote::before{content:"“";color:var(--flag-fill)}
+.quote blockquote::after{content:"”";color:var(--flag-fill)}
+.quote figcaption{color:var(--ink-2);font-size:.95rem}
+
+/* Credentials */
+.creds{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,22px)}
+.cred{padding:clamp(22px,2.8vw,34px)}
+.col-h{font-family:var(--f-mono);font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding-bottom:12px;border-bottom:1px solid var(--stroke)}
+.reg>li{padding:18px 0;border-bottom:1px solid var(--stroke)}
+.reg>li:last-child{border-bottom:0;padding-bottom:0}
+.reg h3{font-size:1.14rem;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.reg p{color:var(--ink-2);margin-top:4px}
+.reg .no{display:inline-block;font-family:var(--f-mono);font-size:.76rem;color:var(--flag);margin-top:10px;padding:4px 10px;border-radius:999px;background:var(--flag-wash)}
+.marks{margin-top:14px;display:grid;gap:9px}
+.marks li{display:grid;grid-template-columns:minmax(0,1fr) 120px 40px;gap:12px;align-items:center;font-size:.95rem;color:var(--ink-2)}
+.marks .bar{height:6px;border-radius:6px;background:var(--stroke);overflow:hidden}
+.marks .bar i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--glacier),var(--flag-fill));transform-origin:0 50%;transition:transform 1.1s var(--ease);transition-delay:calc(var(--n)*90ms)}
+.js .marks:not(.in) .bar i{transform:scaleX(0)}
+.marks b{font-family:var(--f-mono);font-size:.78rem;font-weight:500;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.tools{display:flex;flex-wrap:wrap;gap:8px;padding-top:18px}
+.tools li{font-size:.9rem;font-weight:500;border:1px solid var(--stroke-2);border-radius:999px;padding:7px 14px;background:var(--card);transition:border-color .2s,transform .3s var(--ease)}
+.tools li:hover{border-color:var(--glacier);transform:translateY(-2px)}
+.cred .gap{margin-top:34px}
+@media (max-width:860px){.creds{grid-template-columns:1fr}}
+@media (max-width:480px){.marks li{grid-template-columns:minmax(0,1fr) 64px 40px}}
+
+/* Contact */
+.contact{margin-top:clamp(72px,10vw,136px);padding-bottom:clamp(20px,3vw,40px)}
+.contact-in{position:relative;border-radius:calc(var(--r) + 8px);overflow:hidden;padding:clamp(40px,7vw,96px) clamp(24px,5vw,72px);display:grid;gap:26px;justify-items:start;background:#07131D;color:#EAF2F6;border:1px solid rgba(160,205,228,.2)}
+.contact-in::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px circle at var(--mx,80%) var(--my,10%),rgba(255,107,44,.28),transparent 65%),radial-gradient(60% 80% at 0% 100%,rgba(60,150,190,.3),transparent 70%)}
+.contact-in>*{position:relative}
+.contact .kicker{color:#FF8850}
+.contact h2{font-family:var(--f-display);font-stretch:88%;font-weight:700;font-size:clamp(2.7rem,8vw,6.6rem);line-height:.92;letter-spacing:-.03em;max-width:12ch}
+.contact h2 em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.02em;color:#8FD3EE}
+.contact p{max-width:54ch;color:#A9BDC9;font-size:1.1rem}
+.contact .btn{border-color:rgba(234,242,246,.3);background:rgba(255,255,255,.05);color:#EAF2F6}
+.contact .btn:hover{border-color:#EAF2F6;background:rgba(255,255,255,.1)}
+.contact .btn-primary,.contact .btn-primary:hover{background:#FF6B2C;border-color:#FF6B2C;color:#1A0A02}
+.mailrow{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.foot .wrap{padding-block:22px 34px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+
+/* Map lightbox */
+.lightbox{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:rgba(4,10,16,.96);color:#EAF2F6;overscroll-behavior:contain}
+.lightbox::backdrop{background:rgba(4,10,16,.6)}
+.lightbox[open]{display:grid;grid-template-rows:auto 1fr;animation:lb .35s var(--ease)}
+@keyframes lb{from{opacity:0}}
+.lb-bar{display:flex;align-items:center;gap:12px;padding:12px 16px;font-size:.9rem}
+.lb-bar span{color:#A9BDC9}
+.lb-bar .btn{margin-left:auto;border-color:rgba(234,242,246,.3);color:#EAF2F6;background:rgba(255,255,255,.06)}
+.lb-scroll{overflow:auto;display:grid;place-items:center;padding:0 16px 16px;overscroll-behavior:contain;min-height:0}
+.lb-scroll img{max-width:100%;max-height:calc(100dvh - 92px);width:auto;height:auto;object-fit:contain;cursor:zoom-in;background:#fff;border-radius:8px}
+.lb-scroll.big{place-items:start}
+.lb-scroll.big img{max-width:none;max-height:none;width:2600px;cursor:zoom-out}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .trk,.kit-track,.atmo::before,.status i{animation:none}
+  .trk{stroke-dashoffset:0}
+  .js .hero-name .ln>span{animation:none;transform:none}
+  .js [data-r]{opacity:1;transform:none;transition:none}
+  .kit-track{flex-wrap:wrap;width:auto}.kit-track ul[aria-hidden]{display:none}.kit-track ul{flex-wrap:wrap}
+  .js .strip:not(.in) .blocks i,.js .marks:not(.in) .bar i{transform:none}
+  .method-nav.auto button.on::after{animation:none}
+  *{transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="atmo" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#top">Richard Ribbans<b>/</b></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#flying">Flying</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm" href="assets/Richard-Ribbans-CV.pdf" download="Richard-Ribbans-CV.pdf" aria-label="Download CV (PDF)">
+      <svg class="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg><span>Download CV</span>
+    </a>
+    <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 2a7 7 0 0 1 0 14z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap">
+    <p class="status"><i aria-hidden="true"></i>Available for survey and drone work · Western Cape</p>
+    <h1 class="hero-name" id="hero-title"><span class="ln"><span>Richard</span></span> <span class="ln"><span>Ribbans<b aria-hidden="true">/</b></span></span></h1>
+    <p class="hero-tag" data-r>Land surveyor and drone pilot for places that are <em>hard to measure.</em></p>
+
+    <div class="hero-row">
+      <div data-r style="--i:1">
+        <p class="lede">For my master’s I flew ground-penetrating radar over an Antarctic ice shelf by drone and built a 3D model of the crevasses hidden inside it. I’m looking for work in land surveying, field data capture and 3D modelling.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" data-magnet href="mailto:ricrib@hotmail.co.za">Email Richard
+            <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+          <a class="btn" data-magnet href="assets/Richard-Ribbans-CV.pdf" download="Richard-Ribbans-CV.pdf">Download CV
+            <svg class="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
+        </div>
+      </div>
+      <div class="who" data-r style="--i:2">
+        <img src="assets/portrait.jpg" width="262" height="262" fetchpriority="high" alt="Richard Ribbans at sea in a yellow foul-weather jacket">
+        <div><b>MSc (Eng) Geomatics</b><span>University of Cape Town</span></div>
+      </div>
+    </div>
+
+    <figure class="sheet" data-r style="--i:2" aria-labelledby="sheet-note">
+      <div class="sheet-bar">
+        <i class="dot" aria-hidden="true"></i>
+        <span class="mono">Fimbul Ice Shelf survey · January 2025</span>
+        <button class="btn btn-sm" id="replay" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.6-5.9M4 4v5h5"/></svg>Replay flight
+        </button>
+      </div>
+      <div class="panel" id="plan-panel">
+        <span class="panel-tag">Plan</span>
+        <svg id="plan" role="img" aria-label="Plan of the 21 by 6 kilometre survey area on the Fimbul Ice Shelf, showing the main transect, launch sites and two recorded flight tracks"></svg>
+        <div class="tip" id="tip" aria-hidden="true"></div>
+      </div>
+      <div class="legend" aria-hidden="true">
+        <span><svg viewBox="0 0 26 10"><rect x="1" y="1" width="24" height="8" rx="1" fill="none" stroke="var(--flag-fill)" stroke-width="1.5"/></svg>Survey area</span>
+        <span><svg viewBox="0 0 26 10"><path d="M0 5h26" stroke="var(--ink-2)" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Main transect</span>
+        <span><svg viewBox="0 0 26 10"><path d="M13 1v8M9 5h8" stroke="var(--ink)" stroke-width="1.5"/></svg>Launch sites</span>
+        <span><svg viewBox="0 0 26 10"><path d="M0 5h26" stroke="var(--glacier)" stroke-width="2"/></svg>Flight tracks from the drone’s logs</span>
+      </div>
+      <div class="panel">
+        <span class="panel-tag">Section</span>
+        <svg id="section" tabindex="0" role="img" aria-label="Schematic cross-section of the ice shelf: radar layers under the surface and basal crevasses rising 80 to 89 percent of the way up from the base"></svg>
+      </div>
+      <div class="readout" aria-live="polite">
+        <span class="state" id="rd-state">Radar line ready</span>
+        <span id="rd-detail"></span>
+        <span class="hint" id="rd-hint" aria-hidden="true">Move across the section to fly the radar</span>
+      </div>
+      <dl class="titleblock">
+        <div><dt>Registered</dt><dd>Candidate Land Surveyor, SAGC</dd></div>
+        <div><dt>Licensed</dt><dd>Remote Pilot Certificate, SACAA</dd></div>
+        <div><dt>Qualified</dt><dd>MSc (Eng) Geomatics, UCT</dd></div>
+        <div><dt>Based</dt><dd>Raithby, Western Cape</dd></div>
+      </dl>
+    </figure>
+    <p class="sheet-note" id="sheet-note">Plan: the survey area on the Fimbul Ice Shelf, Antarctica. Launch sites and flight tracks are drawn from the drone’s own flight logs; point at them for dates. Section: a schematic of what the radar found under the surface, not to scale.</p>
+  </div>
+
+  <div class="kit-band" id="kit" role="group" aria-label="Equipment and software Richard works with">
+    <div class="kit-track">
+      <ul><li>DJI Matrice 350 RTK</li><li>Trimble R4S GNSS</li><li>Zond Aero LF radar</li><li>Terrestrial laser scanning</li><li>ArcGIS Pro</li><li>QGIS</li><li>Pix4D</li><li>Agisoft Metashape</li><li>CloudCompare</li><li>Total station</li><li>LiDAR</li><li>Photogrammetry</li></ul>
+      <ul aria-hidden="true"><li>DJI Matrice 350 RTK</li><li>Trimble R4S GNSS</li><li>Zond Aero LF radar</li><li>Terrestrial laser scanning</li><li>ArcGIS Pro</li><li>QGIS</li><li>Pix4D</li><li>Agisoft Metashape</li><li>CloudCompare</li><li>Total station</li><li>LiDAR</li><li>Photogrammetry</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-r>What I do</p>
+      <h2 class="h2" id="about-title" data-r>Measure it in the field.<br><em>Model it at the desk.</em></h2>
+      <p class="lede" data-r style="--i:1">I trained as a land surveyor at the University of Cape Town and stayed on for a master’s in geomatics. I’m most useful on jobs where the data has to be collected first, and collected properly.</p>
+    </div>
+    <ul class="does">
+      <li class="glass lift" data-r data-glow>
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M7 7h10l-1.5 5h-7zM12 12v3M12 15l-5 6M12 15l5 6M12 15v6"/></svg></span>
+        <h3>Land surveying</h3>
+        <p>GNSS positioning, total station work and cadastral surveying. I’m registered with the South African Geomatics Council as a candidate land surveyor.</p>
+        <p class="kit">Trimble R4S GNSS · total station · terrestrial laser scanner</p>
+      </li>
+      <li class="glass lift" data-r data-glow style="--i:1">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><path d="M5 6h14M9 6l1.5 5h3L15 6M10.5 11v3h3v-3M8 20l4-3 4 3"/></svg></span>
+        <h3>Drone data capture</h3>
+        <p>Licensed remote pilot. I plan and fly survey missions, including low-level radar lines at 5&nbsp;m above an ice shelf with a DJI Matrice 350 RTK.</p>
+        <p class="kit">DJI Matrice 350 RTK · Phantom 4 Pro · Zond Aero LF radar</p>
+      </li>
+      <li class="glass lift" data-r data-glow style="--i:2">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9zM12 12l8-4.5M12 12L4 7.5M12 12v9"/></svg></span>
+        <h3>3D modelling</h3>
+        <p>Photogrammetry, LiDAR and radar data turned into point clouds, surfaces and maps that someone else can pick up and use.</p>
+        <p class="kit">ArcGIS Pro · QGIS · Pix4D · Agisoft Metashape · CloudCompare</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-r>Work</p>
+      <h2 class="h2" id="work-title" data-r>Selected <em>projects</em></h2>
+    </div>
+
+    <article class="case" data-r>
+      <header class="case-head">
+        <p class="mono" style="color:var(--flag)">MSc research · University of Cape Town · 2024 – 2025</p>
+        <h3>A 3D model of the Fimbul Ice Shelf, inside and out</h3>
+        <p class="lede">Ice shelves crack from underneath, where nobody can see. Walking a radar across crevassed ice is slow and dangerous, and satellites are too coarse to show the shape of the base. I flew the radar on a drone instead.</p>
+      </header>
+      <div class="case-body">
+        <figure class="case-fig">
+          <button class="zoom" id="zoom" type="button" aria-haspopup="dialog" aria-label="Open the full field operations map">
+            <img src="assets/fimbul-locality-plan.jpg" width="1600" height="1090" loading="lazy" alt="Locality plan of the working area on the Fimbul Ice Shelf, with the 21 by 6 kilometre project area, known and hidden crevasses, and the T-intersection and West Grid survey blocks">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8.5v5M8.5 11h5"/></svg>Open full map</span>
+          </button>
+          <figcaption>The field operations map I drew for the campaign, in Antarctic Polar Stereographic (EPSG:3031). The full sheet includes the supply route and coordinate tables.</figcaption>
+        </figure>
+        <div class="case-text">
+          <div class="finding">
+            <strong><span data-count="80">80</span> – <span data-count="89">89</span><small>%</small></strong>
+            <span>of the ice shelf’s thickness is already cut through by basal crevasses at its western calving face. The model puts a number on a risk that was last mapped in 2011.</span>
+          </div>
+          <div class="method" id="method">
+            <h4>How I did it</h4>
+            <div class="method-nav" role="group" aria-label="Method steps">
+              <button type="button">Plan</button><button type="button">Fly</button><button type="button">Clean</button><button type="button">Extract</button><button type="button">Model</button>
+            </div>
+            <ol class="steps">
+              <li><b>Planned the campaign</b><span>Chose drone-borne radar after a scoping review of how ice shelves are surveyed, then mapped the working area, transects and supply route.</span></li>
+              <li><b>Flew the lines</b><span>28 radar flights as pilot in command, 5&nbsp;m above the surface at 4&nbsp;m/s, with GNSS control from a Trimble R4S.</span></li>
+              <li><b>Cleaned the radargrams</b><span>Tested noise-reduction methods and showed BM3D filtering removes noise without losing the fine layering.</span></li>
+              <li><b>Wrote new extraction methods</b><span>Wavelet and Hough transforms couldn’t handle layering this dense, so I developed two of my own: one for horizontal layers, one for basal crevasse tips.</span></li>
+              <li><b>Built the model</b><span>Converted the extracted features into georeferenced point clouds and assembled the 3D geometry of the shelf.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <dl class="spec">
+        <div><dt>Aircraft</dt><dd>DJI Matrice 350 RTK</dd></div>
+        <div><dt>Sensor</dt><dd>Zond Aero LF radar, 100&nbsp;MHz</dd></div>
+        <div><dt>Flight profile</dt><dd>5&nbsp;m above ground, 4&nbsp;m/s</dd></div>
+        <div><dt>Campaign</dt><dd>SAAS 2024/25, Antarctica</dd></div>
+      </dl>
+    </article>
+
+    <div class="more">
+      <article class="card glass lift" data-r data-glow>
+        <p class="meta">Honours project · UCT · 2023 · 84%</p>
+        <h3>Mapping Cape Town’s coastline above and below the waterline</h3>
+        <p>Land-based and hydrographic LiDAR rarely meet cleanly at the shore. I fused terrestrial and hydrographic LiDAR datasets into one continuous surface to map coastline topology in Cape Town.</p>
+      </article>
+      <article class="card glass lift" data-r data-glow style="--i:1">
+        <p class="meta">Vacation work · Cape Town · 2020 – 2021</p>
+        <h3>Laser scanning buildings for survey firms</h3>
+        <p>At Horts Geo-Solutions I was responsible for 3D scanning a building for one of their clients. The year before, at Lloyd &amp; Hill Inc., I worked the 3D scanner and total station on a scanning project.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="flying" aria-labelledby="flying-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-r>Flying</p>
+      <h2 class="h2" id="flying-title" data-r>Pilot <em>logbook</em></h2>
+      <p class="lede" data-r style="--i:1">I hold a Remote Pilot Certificate from the South African Civil Aviation Authority. Every flight on the ice shelf was flown as pilot in command.</p>
+    </div>
+    <div class="fly">
+      <div class="nums">
+        <div class="num glass" data-r data-glow><b><span data-count="28">28</span></b><span>radar flights on the ice shelf</span></div>
+        <div class="num glass" data-r data-glow style="--i:1"><b><span data-count="10.9" data-dec="1">10.9</span><small>h</small></b><span>as pilot in command in Antarctica</span></div>
+        <div class="num glass" data-r data-glow style="--i:2"><b><span data-count="5">5</span><small>m</small></b><span>flying height above the ice</span></div>
+        <div class="num glass" data-r data-glow style="--i:3"><b><span data-count="100">100</span><small>MHz</small></b><span>radar carried under the aircraft</span></div>
+        <div class="num wide glass" data-r data-glow style="--i:4"><b>Remote Pilot Certificate</b><span>Multirotor · visual line of sight · August 2024 · DJI Matrice 350 RTK and Phantom 4 Pro</span></div>
+      </div>
+      <div class="strip-wrap glass" data-r data-glow style="--i:1">
+        <div class="strip-title mono"><span>Fimbul Ice Shelf · radar flights</span><span>1 block = 1 flight · width = time</span></div>
+        <div class="strip" id="strip"></div>
+        <p class="strip-read" id="strip-read">Point at a block to read the flight.<br>From my RPAS pilot logbook.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="experience" aria-labelledby="xp-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-r>Experience</p>
+      <h2 class="h2" id="xp-title" data-r>Field, teaching <em>and leading</em></h2>
+    </div>
+    <ol class="xp" id="xp">
+      <li>
+        <span class="when">May 2026</span>
+        <div><h3>Congress volunteer · <span class="org">FIG Congress 2026, Cape Town</span></h3>
+        <p>One of 10 volunteers chosen from 98 applicants for the International Federation of Surveyors’ congress. Worked on the operations team that ran the technical programme.</p></div>
+      </li>
+      <li>
+        <span class="when">Jan 2025</span>
+        <div><h3>Drone pilot and field surveyor · <span class="org">SAAS 2024/25 Antarctic Field Campaign, UCT</span></h3>
+        <p>GNSS positioning and drone-operated radar surveys on the Fimbul Ice Shelf. Produced the campaign’s field operations map.</p></div>
+      </li>
+      <li>
+        <span class="when">Apr 2023 – present</span>
+        <div><h3>Chairman · <span class="org">6th Rondebosch Rovers</span></h3>
+        <p>Lead the crew: planning activities, running events and organising community service.</p></div>
+      </li>
+      <li>
+        <span class="when">Apr 2022 – Nov 2023</span>
+        <div><h3>Mathematics tutor · <span class="org">TutorDoctor</span></h3>
+        <p>Tutored maths one-on-one for learners across a range of ages.</p></div>
+      </li>
+      <li>
+        <span class="when">Feb – Dec 2022</span>
+        <div><h3>First-year mentor · <span class="org">University of Cape Town</span></h3>
+        <p>Mentored a group of first-year students through weekly check-ins.</p></div>
+      </li>
+      <li>
+        <span class="when">Jul – Nov 2021</span>
+        <div><h3>Academic tutor, APG2041S · <span class="org">University of Cape Town</span></h3>
+        <p>Helped geomatics students work through problems and marked their assignments.</p></div>
+      </li>
+      <li>
+        <span class="when">Jan 2021</span>
+        <div><h3>Vacation work · <span class="org">Horts Geo-Solutions</span></h3>
+        <p>3D scanned a building for a client.</p></div>
+      </li>
+      <li>
+        <span class="when">Jan 2020</span>
+        <div><h3>Vacation work · <span class="org">Lloyd &amp; Hill Inc.</span></h3>
+        <p>Assisted with the 3D scanner and total station on a scanning project.</p></div>
+      </li>
+    </ol>
+
+    <figure class="quote glass" data-r data-glow>
+      <blockquote>Professionalism, reliability, and a strong work ethic</blockquote>
+      <figcaption>From Richard’s reference letter, FIG2026 Local Organising Committee, June 2026</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="credentials" aria-labelledby="cred-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker" data-r>Credentials</p>
+      <h2 class="h2" id="cred-title" data-r>Registered, licensed, <em>qualified</em></h2>
+    </div>
+    <div class="creds">
+      <div class="cred glass" data-r data-glow>
+        <h3 class="col-h">Registrations and licences</h3>
+        <ul class="reg">
+          <li>
+            <h3>Candidate Geomatics Practitioner: Land Survey Professional</h3>
+            <p>South African Geomatics Council · In training · since June 2024</p>
+            <span class="no">Reg. no. CGPrLS 0981</span>
+          </li>
+          <li>
+            <h3>Remote Pilot Certificate</h3>
+            <p>South African Civil Aviation Authority · Multirotor, VLOS · August 2024</p>
+          </li>
+        </ul>
+        <h3 class="col-h gap">Software</h3>
+        <ul class="tools">
+          <li>ArcGIS Pro</li><li>QGIS</li><li>Pix4D</li><li>Agisoft Metashape</li><li>CloudCompare</li>
+        </ul>
+      </div>
+      <div class="cred glass" data-r data-glow style="--i:1">
+        <h3 class="col-h">Education</h3>
+        <ul class="reg">
+          <li>
+            <h3>MSc in Engineering, specialising in Geomatics</h3>
+            <p>University of Cape Town · 2024 – 2025</p>
+            <p>Dissertation: 3D modelling the internal and external geometry of the Fimbul Ice Shelf.</p>
+          </li>
+          <li>
+            <h3>BSc (Hons) Geomatics</h3>
+            <p>University of Cape Town · 2019 – 2023 · Dean’s Merit List 2021, 2022 and 2023</p>
+            <ul class="marks" id="marks" aria-label="Selected module results">
+              <li>Surveying 3 <span class="bar"><i style="width:91%;--n:0"></i></span><b>91%</b></li>
+              <li>Cadastral Surveying &amp; Registration <span class="bar"><i style="width:87%;--n:1"></i></span><b>87%</b></li>
+              <li>Geomatics 4 <span class="bar"><i style="width:84%;--n:2"></i></span><b>84%</b></li>
+              <li>Final-year project <span class="bar"><i style="width:84%;--n:3"></i></span><b>84%</b></li>
+              <li>Applied Surveying &amp; GISc <span class="bar"><i style="width:83%;--n:4"></i></span><b>83%</b></li>
+              <li>Advanced Spatial Data Analysis <span class="bar"><i style="width:80%;--n:5"></i></span><b>80%</b></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact-in" data-r data-glow>
+      <p class="kicker">Contact</p>
+      <h2 id="contact-title">Got a site that needs <em>measuring?</em></h2>
+      <p>I’m available for land surveying, drone survey and geospatial processing roles, in the Western Cape or wherever the fieldwork is.</p>
+      <div class="mailrow">
+        <a class="btn btn-primary" data-magnet href="mailto:ricrib@hotmail.co.za">ricrib@hotmail.co.za
+          <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <button class="btn" id="copy" type="button" data-email="ricrib@hotmail.co.za"><span id="copy-label" aria-live="polite">Copy email</span></button>
+        <a class="btn" data-magnet href="assets/Richard-Ribbans-CV.pdf" download="Richard-Ribbans-CV.pdf">Download CV
+          <svg class="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
+        <a class="btn" data-magnet href="https://www.linkedin.com/in/richard-ribbans-9211b8159" target="_blank" rel="noopener">LinkedIn
+          <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap"><span>Richard Ribbans · Raithby, Western Cape</span><span>Hero map: 70°14′S 2°30′W</span></div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Field operations map, SAAS 2024/25 Antarctic Field Campaign">
+  <div class="lb-bar"><b>Field operations map</b><span>Click the map to zoom</span>
+    <button class="btn btn-sm" id="lb-close" type="button">Close</button></div>
+  <div class="lb-scroll" id="lb-scroll"><img id="lb-img" alt="Full field operations map for the SAAS 2024/25 Antarctic Field Campaign: locality plan, supply route, key plan and coordinate tables" width="2600" height="1838"></div>
+</dialog>
+
+<script>
+var PLAN={"tracks":[{"date":"2025-01-12","km":1.4,"pts":[[-2.42103,-70.23261],[-2.4211,-70.23256],[-2.42122,-70.23253],[-2.42133,-70.23249],[-2.42144,-70.23246],[-2.42155,-70.23242],[-2.42166,-70.23239],[-2.42177,-70.23235],[-2.42189,-70.23232],[-2.42201,-70.23228],[-2.42212,-70.23224],[-2.42225,-70.2322],[-2.42237,-70.23216],[-2.42249,-70.23213],[-2.42259,-70.2321],[-2.42268,-70.23213],[-2.42274,-70.23218],[-2.42281,-70.23223],[-2.42287,-70.23227],[-2.42293,-70.23232],[-2.423,-70.23237],[-2.42308,-70.23242],[-2.42315,-70.23247],[-2.42321,-70.23251],[-2.42327,-70.23256],[-2.42333,-70.2326],[-2.42339,-70.23265],[-2.42341,-70.2327],[-2.4234,-70.23274],[-2.42333,-70.2328],[-2.42322,-70.23284],[-2.42309,-70.23287],[-2.42295,-70.23289],[-2.4228,-70.23289],[-2.42266,-70.23291],[-2.42252,-70.23293],[-2.42238,-70.23296],[-2.42223,-70.23298],[-2.42208,-70.233],[-2.42192,-70.23302],[-2.42177,-70.23304],[-2.42162,-70.23306],[-2.42146,-70.23309],[-2.42131,-70.23311],[-2.42116,-70.23313],[-2.42101,-70.23315],[-2.42086,-70.23317],[-2.42071,-70.23319],[-2.42057,-70.23321],[-2.42042,-70.23323],[-2.42028,-70.23325],[-2.42013,-70.23327],[-2.41996,-70.23329],[-2.41982,-70.23331],[-2.41966,-70.23333],[-2.41948,-70.23336],[-2.41935,-70.23337],[-2.41916,-70.23338],[-2.41897,-70.23337],[-2.4188,-70.23336],[-2.41866,-70.23332],[-2.41855,-70.23328],[-2.41849,-70.23324],[-2.41847,-70.23319],[-2.41852,-70.23314],[-2.4186,-70.23309],[-2.41867,-70.23305],[-2.41873,-70.233],[-2.41878,-70.23296],[-2.41892,-70.23294],[-2.41908,-70.23293],[-2.41922,-70.23292],[-2.41939,-70.2329],[-2.41957,-70.23288],[-2.4197,-70.23287],[-2.41983,-70.23286],[-2.41997,-70.23284],[-2.42012,-70.23283],[-2.42027,-70.23282],[-2.42042,-70.2328],[-2.42057,-70.23279],[-2.42072,-70.23277],[-2.42088,-70.23276],[-2.42104,-70.23274],[-2.4212,-70.23273],[-2.42136,-70.23271],[-2.42153,-70.2327],[-2.42169,-70.23268],[-2.42185,-70.23267],[-2.42202,-70.23265],[-2.42219,-70.23264],[-2.42236,-70.23262],[-2.42252,-70.23261],[-2.42269,-70.23259],[-2.42286,-70.23257],[-2.42303,-70.23256],[-2.4232,-70.23254],[-2.42337,-70.23253],[-2.42354,-70.23251],[-2.42371,-70.23249],[-2.42388,-70.23248],[-2.42405,-70.23246],[-2.42422,-70.23245],[-2.42439,-70.23243],[-2.42456,-70.23241],[-2.42474,-70.2324],[-2.42491,-70.23238],[-2.42508,-70.23237],[-2.42525,-70.23235],[-2.42542,-70.23233],[-2.42559,-70.23232],[-2.42577,-70.2323],[-2.42594,-70.23229],[-2.42611,-70.23227],[-2.42628,-70.23225],[-2.42645,-70.23224],[-2.42663,-70.23222],[-2.4268,-70.2322],[-2.42697,-70.23219],[-2.42715,-70.23217],[-2.42732,-70.23216],[-2.42749,-70.23214],[-2.42767,-70.23212],[-2.42784,-70.23211],[-2.42801,-70.23209],[-2.42818,-70.23207],[-2.42836,-70.23206],[-2.42853,-70.23204],[-2.4287,-70.23203],[-2.42888,-70.23201],[-2.42905,-70.23199],[-2.42922,-70.23198],[-2.42939,-70.23196],[-2.42957,-70.23195],[-2.42974,-70.23193],[-2.42991,-70.23192],[-2.43009,-70.2319],[-2.43026,-70.23188],[-2.43043,-70.23187],[-2.4306,-70.23185],[-2.43078,-70.23184],[-2.43095,-70.23182],[-2.43111,-70.2318],[-2.43125,-70.23179],[-2.43141,-70.23178],[-2.43155,-70.23176],[-2.43167,-70.23174],[-2.43179,-70.2317],[-2.4319,-70.23166],[-2.432,-70.23163],[-2.43211,-70.23159],[-2.43222,-70.23155],[-2.43234,-70.23151],[-2.43245,-70.23147],[-2.43254,-70.23144],[-2.4324,-70.23145],[-2.43227,-70.23146],[-2.43211,-70.23148],[-2.43197,-70.23149],[-2.43181,-70.23151],[-2.43163,-70.23153],[-2.4315,-70.23154],[-2.43136,-70.23155],[-2.43121,-70.23157],[-2.43106,-70.23158],[-2.43091,-70.2316],[-2.43075,-70.23162],[-2.4306,-70.23163],[-2.43044,-70.23165],[-2.43029,-70.23166],[-2.43013,-70.23168],[-2.42998,-70.2317],[-2.42982,-70.23171],[-2.42967,-70.23173],[-2.42951,-70.23174],[-2.42936,-70.23176],[-2.4292,-70.23177],[-2.42905,-70.23179],[-2.42889,-70.2318],[-2.42874,-70.23182],[-2.42858,-70.23184],[-2.42843,-70.23185],[-2.42828,-70.23187],[-2.42812,-70.23189],[-2.42797,-70.2319],[-2.42781,-70.23192],[-2.42766,-70.23193],[-2.42751,-70.23195],[-2.42735,-70.23196],[-2.4272,-70.23198],[-2.42704,-70.23199],[-2.42689,-70.23201],[-2.42674,-70.23203],[-2.42658,-70.23204],[-2.42643,-70.23206],[-2.42628,-70.23207],[-2.42612,-70.23209],[-2.42597,-70.23211],[-2.42582,-70.23212],[-2.42566,-70.23214],[-2.42551,-70.23215],[-2.42536,-70.23217],[-2.42521,-70.23218],[-2.42505,-70.2322],[-2.4249,-70.23221],[-2.42475,-70.23223],[-2.4246,-70.23225],[-2.42444,-70.23226],[-2.42429,-70.23228],[-2.42414,-70.23229],[-2.42399,-70.23231],[-2.42383,-70.23232],[-2.42368,-70.23234],[-2.42353,-70.23235],[-2.42339,-70.23237],[-2.42325,-70.23238],[-2.42311,-70.2324],[-2.42298,-70.23241],[-2.42285,-70.23242],[-2.42267,-70.23244],[-2.42249,-70.23246],[-2.42233,-70.23248],[-2.42218,-70.23249],[-2.42204,-70.23251],[-2.42189,-70.23252],[-2.42175,-70.23254],[-2.42162,-70.23255],[-2.42149,-70.23256],[-2.42135,-70.23258],[-2.42122,-70.23259],[-2.42109,-70.2326],[-2.42109,-70.2326]]},{"date":"2025-01-12","km":7.1,"pts":[[-2.42104,-70.2326],[-2.42148,-70.23239],[-2.42195,-70.23217],[-2.42253,-70.23194],[-2.4232,-70.23172],[-2.42359,-70.23145],[-2.4237,-70.23115],[-2.42381,-70.23083],[-2.42391,-70.23051],[-2.42401,-70.23021],[-2.42411,-70.22991],[-2.4242,-70.22962],[-2.42429,-70.22932],[-2.42436,-70.22909],[-2.42443,-70.22885],[-2.4245,-70.22861],[-2.42458,-70.22837],[-2.42465,-70.22813],[-2.42479,-70.2279],[-2.42509,-70.2277],[-2.42556,-70.22743],[-2.42606,-70.22714],[-2.42639,-70.22694],[-2.42673,-70.22674],[-2.42706,-70.22654],[-2.4274,-70.22634],[-2.42773,-70.22614],[-2.42806,-70.22594],[-2.42854,-70.22566],[-2.429,-70.22539],[-2.42939,-70.2251],[-2.42979,-70.2248],[-2.4302,-70.2245],[-2.43059,-70.22421],[-2.43097,-70.22393],[-2.43134,-70.22366],[-2.43169,-70.2234],[-2.43205,-70.22313],[-2.4324,-70.22287],[-2.43275,-70.22261],[-2.43306,-70.22238],[-2.4334,-70.22213],[-2.43375,-70.22187],[-2.4341,-70.22161],[-2.43444,-70.22136],[-2.43478,-70.22111],[-2.43512,-70.22086],[-2.43546,-70.22061],[-2.43579,-70.22036],[-2.43613,-70.22011],[-2.43646,-70.21986],[-2.43678,-70.21962],[-2.4371,-70.21938],[-2.43739,-70.21914],[-2.43765,-70.2189],[-2.4379,-70.21867],[-2.43816,-70.21843],[-2.43842,-70.2182],[-2.43867,-70.21797],[-2.43892,-70.21775],[-2.43916,-70.21753],[-2.4394,-70.21731],[-2.43965,-70.21709],[-2.43988,-70.21687],[-2.44012,-70.21666],[-2.44036,-70.21644],[-2.44059,-70.21623],[-2.44082,-70.21602],[-2.44115,-70.21572],[-2.4415,-70.21541],[-2.44184,-70.21509],[-2.44219,-70.21478],[-2.44254,-70.21446],[-2.44277,-70.21425],[-2.44301,-70.21403],[-2.44325,-70.21381],[-2.44349,-70.21359],[-2.44373,-70.21338],[-2.44397,-70.21316],[-2.44421,-70.21294],[-2.44445,-70.21272],[-2.44469,-70.2125],[-2.44493,-70.21228],[-2.44517,-70.21206],[-2.4454,-70.21185],[-2.44564,-70.21163],[-2.44588,-70.21142],[-2.44611,-70.2112],[-2.44635,-70.21098],[-2.44659,-70.21076],[-2.44683,-70.21054],[-2.44707,-70.21033],[-2.44741,-70.21002],[-2.44775,-70.20971],[-2.44809,-70.2094],[-2.44842,-70.20909],[-2.44876,-70.20879],[-2.4491,-70.20848],[-2.44941,-70.2082],[-2.44966,-70.20797],[-2.44994,-70.20771],[-2.45026,-70.20742],[-2.4505,-70.2072],[-2.45075,-70.20697],[-2.451,-70.20674],[-2.45126,-70.20651],[-2.45151,-70.20628],[-2.45177,-70.20604],[-2.45204,-70.20579],[-2.45231,-70.20555],[-2.45259,-70.2053],[-2.45286,-70.20504],[-2.45314,-70.20479],[-2.45341,-70.20454],[-2.45367,-70.20431],[-2.45394,-70.20407],[-2.45398,-70.204],[-2.45414,-70.20387],[-2.45439,-70.20363],[-2.45465,-70.20339],[-2.45492,-70.20314],[-2.45495,-70.20288],[-2.45432,-70.20279],[-2.45392,-70.203],[-2.45363,-70.20325],[-2.45336,-70.20349],[-2.45307,-70.20374],[-2.45277,-70.20401],[-2.45245,-70.20429],[-2.45214,-70.20457],[-2.45182,-70.20485],[-2.4515,-70.20513],[-2.45118,-70.20541],[-2.45086,-70.20569],[-2.45055,-70.20597],[-2.45024,-70.20625],[-2.44992,-70.20653],[-2.4496,-70.20681],[-2.44929,-70.20708],[-2.44899,-70.20735],[-2.4487,-70.20761],[-2.44841,-70.20786],[-2.44813,-70.20811],[-2.44785,-70.20836],[-2.44758,-70.2086],[-2.4473,-70.20885],[-2.44703,-70.20909],[-2.44676,-70.20933],[-2.44649,-70.20957],[-2.44621,-70.20981],[-2.44596,-70.21003],[-2.44567,-70.21029],[-2.44539,-70.21055],[-2.44511,-70.2108],[-2.44483,-70.21106],[-2.44454,-70.21131],[-2.44426,-70.21157],[-2.44398,-70.21182],[-2.44371,-70.21208],[-2.44343,-70.21233],[-2.44315,-70.21258],[-2.44287,-70.21283],[-2.44259,-70.21309],[-2.44232,-70.21334],[-2.44204,-70.21359],[-2.44176,-70.21385],[-2.44148,-70.2141],[-2.4412,-70.21435],[-2.44092,-70.2146],[-2.44064,-70.21486],[-2.44036,-70.21511],[-2.44009,-70.21536],[-2.43981,-70.21561],[-2.43953,-70.21586],[-2.43925,-70.21612],[-2.43897,-70.21637],[-2.43869,-70.21662],[-2.43842,-70.21687],[-2.43814,-70.21712],[-2.43786,-70.21738],[-2.43758,-70.21763],[-2.4373,-70.21788],[-2.43702,-70.21814],[-2.43674,-70.21839],[-2.43646,-70.21864],[-2.43618,-70.21889],[-2.43591,-70.21914],[-2.43563,-70.2194],[-2.43535,-70.21965],[-2.43507,-70.2199],[-2.43479,-70.22016],[-2.43452,-70.22041],[-2.43424,-70.22066],[-2.43396,-70.22091],[-2.43368,-70.22116],[-2.4334,-70.22142],[-2.43312,-70.22167],[-2.43285,-70.22192],[-2.43257,-70.22217],[-2.43229,-70.22242],[-2.43201,-70.22267],[-2.43174,-70.22293],[-2.43146,-70.22318],[-2.43118,-70.22343],[-2.4309,-70.22368],[-2.43062,-70.22394],[-2.43034,-70.22419],[-2.43006,-70.22444],[-2.42979,-70.22469],[-2.42951,-70.22495],[-2.42923,-70.2252],[-2.42895,-70.22545],[-2.42868,-70.2257],[-2.4284,-70.22595],[-2.42812,-70.2262],[-2.42784,-70.22646],[-2.42756,-70.22671],[-2.42729,-70.22696],[-2.42701,-70.22721],[-2.42673,-70.22746],[-2.42645,-70.22771],[-2.42618,-70.22797],[-2.4259,-70.22822],[-2.42562,-70.22847],[-2.42535,-70.22872],[-2.42507,-70.22897],[-2.42479,-70.22923],[-2.42451,-70.22948],[-2.42423,-70.22973],[-2.42395,-70.22998],[-2.42367,-70.23023],[-2.4234,-70.23049],[-2.42312,-70.23074],[-2.42284,-70.23099],[-2.42256,-70.23124],[-2.42228,-70.2315],[-2.42201,-70.23175],[-2.42175,-70.23198],[-2.42145,-70.23225],[-2.42119,-70.23249],[-2.4211,-70.23257]]}],"sites":[{"lon":-2.42069,"lat":-70.23255,"dates":["2025-01-01","2025-01-07","2025-01-12","2025-01-14","2025-01-17","2025-01-18"]},{"lon":-2.42116,"lat":-70.2972,"dates":["2025-01-05","2025-01-16"]},{"lon":-2.41618,"lat":-70.23569,"dates":["2025-01-17"]},{"lon":-2.43362,"lat":-70.22385,"dates":["2025-01-18"]},{"lon":-2.44902,"lat":-70.21049,"dates":["2025-01-19"]},{"lon":-2.3632,"lat":-70.228,"dates":["2025-01-19"]},{"lon":-2.41058,"lat":-70.2429,"dates":["2025-01-19"]},{"lon":-2.47239,"lat":-70.25833,"dates":["2025-01-19"]},{"lon":-2.54633,"lat":-70.26407,"dates":["2025-01-19"]},{"lon":-2.58667,"lat":-70.27328,"dates":["2025-01-19"]},{"lon":-2.68903,"lat":-70.28642,"dates":["2025-01-20"]},{"lon":-2.67572,"lat":-70.25557,"dates":["2025-01-27"]},{"lon":-2.70218,"lat":-70.25696,"dates":["2025-01-27"]}]};
+(function(){
+  var NS='http://www.w3.org/2000/svg',root=document.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine=matchMedia('(hover: hover) and (pointer: fine)').matches;
+  function $(id){return document.getElementById(id)}
+  function el(n,a,t){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(t!=null)e.textContent=t;return e}
+  function dms(d,m,s){return -(d+m/60+s/3600)}
+  var DF=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
+  function fmtDate(s){return DF.format(new Date(s+'T00:00:00Z'))}
+
+  /* Coordinates read off the campaign's field operations map (WGS 84). */
+  var AREA={NW:[dms(2,48,22.48),dms(70,16,3.43)],NE:[dms(2,19,31.15),dms(70,10,26.86)],SE:[dms(2,14,45.12),dms(70,13,13.90)],SW:[dms(2,43,39.24),dms(70,18,51.33)]};
+  var TRANSECT=[[dms(2,42,23.83),dms(70,16,49.94)],[dms(2,38,42.47),dms(70,15,49.81)],[dms(2,34,39.35),dms(70,14,59.1)],[dms(2,30,36.45),dms(70,14,8.38)],[dms(2,27,7.08),dms(70,12,43.08)],[dms(2,22,25.51),dms(70,12,30.56)]];
+  var PLACES=[{n:'Offload area',p:[dms(2,42,13.67),dms(70,15,20.11)],dy:-9},{n:'Crevasse intersection',p:[dms(2,26,18),dms(70,13,15)],dy:16,short:1}];
+
+  var LAT0=-70.245,KX=111320*Math.cos(LAT0*Math.PI/180),KY=110540;
+  function en(p){return [p[0]*KX,p[1]*KY]}
+  var a=en(AREA.NW),b=en(AREA.NE),th=Math.atan2(b[1]-a[1],b[0]-a[0]),c=Math.cos(th),s=Math.sin(th);
+  function uv(p){var q=en(p),e=q[0]-a[0],n=q[1]-a[1];return [e*c+n*s,-(-e*s+n*c)]} /* u along the area, v down the page */
+  var L=uv(AREA.NE)[0],D=uv(AREA.SW)[1];
+
+  /* ---------- Plan ---------- */
+  var tip=$('tip'),planPanel=$('plan-panel'),tPts=[],tLen=[],tTot=0,planDot=null;
+  function showTip(txt,x,y){tip.textContent=txt;var w=planPanel.clientWidth;tip.style.left=Math.max(110,Math.min(w-110,x))+'px';tip.style.top=Math.max(40,y)+'px';tip.classList.add('on')}
+  function hideTip(){tip.classList.remove('on')}
+  function bindTip(node,txt,pos){
+    function on(ev){var r=planPanel.getBoundingClientRect();if(pos||!ev.clientX)showTip(txt,pos?pos[0]:r.width/2,pos?pos[1]:60);else showTip(txt,ev.clientX-r.left,ev.clientY-r.top)}
+    node.addEventListener('pointerenter',on);node.addEventListener('pointermove',function(ev){if(!pos)on(ev)});
+    node.addEventListener('pointerleave',hideTip);node.addEventListener('focus',on);node.addEventListener('blur',hideTip);
+  }
+  function drawPlan(){
+    var svg=$('plan');if(!svg)return;
+    var W=Math.max(300,Math.round(svg.parentNode.clientWidth)),small=W<620;
+    var mx=small?450:900,mt=small?3200:1500,mb=700;
+    var k=W/(L+2*mx),H=Math.round((D+mt+mb)*k);
+    function P(p){var q=uv(p);return [(q[0]+mx)*k,(q[1]+mt)*k]}
+    function inside(p){var q=uv(p);return q[0]>-mx*.8&&q[0]<L+mx*.8&&q[1]>-mt*.4&&q[1]<D+mb*.6}
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML='';
+
+    var g=el('g',{stroke:'var(--line)','stroke-width':1});
+    for(var x=0;x<=L;x+=1000){var X=(x+mx)*k;g.appendChild(el('line',{x1:X,x2:X,y1:mt*k,y2:(mt+D)*k,'stroke-opacity':x%5000===0?1:.5}))}
+    svg.appendChild(g);
+
+    var pts=['NW','NE','SE','SW'].map(function(n){return P(AREA[n]).map(function(v){return v.toFixed(1)}).join(',')}).join(' ');
+    svg.appendChild(el('polygon',{points:pts,fill:'var(--flag-wash)',stroke:'var(--flag-fill)','stroke-width':1.5,'stroke-linejoin':'round'}));
+    var nw=P(AREA.NW),ne=P(AREA.NE),sw=P(AREA.SW);
+    svg.appendChild(el('text',{x:nw[0]+10,y:sw[1]-10,'class':'t-flag'},small?'21 × 6 km':'Main project area · 21 × 6 km'));
+
+    tPts=TRANSECT.map(P);tLen=[0];tTot=0;
+    for(var i=1;i<tPts.length;i++){tTot+=Math.hypot(tPts[i][0]-tPts[i-1][0],tPts[i][1]-tPts[i-1][1]);tLen.push(tTot)}
+    svg.appendChild(el('polyline',{points:tPts.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' '),fill:'none',stroke:'var(--ink-2)','stroke-width':1.5,'stroke-dasharray':'5 4'}));
+    tPts.forEach(function(p){svg.appendChild(el('circle',{cx:p[0],cy:p[1],r:2.5,fill:'var(--snow)',stroke:'var(--ink-2)','stroke-width':1.5}))});
+
+    PLAN.tracks.forEach(function(t){
+      var d=t.pts.map(function(p,i){var q=P(p);return (i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)}).join('');
+      svg.appendChild(el('path',{d:d,'class':'trk',pathLength:1}));
+      var hit=el('path',{d:d,'class':'hit','stroke-width':16,style:'fill:none;stroke:transparent'});
+      bindTip(hit,'Flight track · '+fmtDate(t.date)+' · '+t.km+' km');
+      svg.appendChild(hit);
+    });
+
+    PLAN.sites.forEach(function(sx){
+      var p=[sx.lon,sx.lat];if(!inside(p))return;
+      var q=P(p),r=small?4:5,n=sx.dates.length;
+      var txt='Launch site · '+(n>1?n+' days, '+fmtDate(sx.dates[0])+' to '+fmtDate(sx.dates[n-1]):fmtDate(sx.dates[0]));
+      var hit=el('circle',{cx:q[0],cy:q[1],r:13,'class':'hit',tabindex:0,role:'img','aria-label':txt});
+      bindTip(hit,txt,[q[0],q[1]]);
+      svg.appendChild(hit);
+      svg.appendChild(el('path',{d:'M'+(q[0]-r)+' '+q[1]+'h'+(2*r)+'M'+q[0]+' '+(q[1]-r)+'v'+(2*r),stroke:'var(--ink)','stroke-width':1.6,'class':'site-mark','pointer-events':'none'}));
+    });
+
+    PLACES.forEach(function(pl){
+      if(small&&pl.short)return;
+      var q=P(pl.p);
+      svg.appendChild(el('rect',{x:q[0]-3.5,y:q[1]-3.5,width:7,height:7,fill:'var(--flag-fill)',transform:'rotate(45 '+q[0]+' '+q[1]+')'}));
+      svg.appendChild(el('text',{x:q[0]+9,y:q[1]+pl.dy,'class':'t-strong'},pl.n));
+    });
+    if(!small){var t1=tPts[1];svg.appendChild(el('text',{x:t1[0]+10,y:t1[1]+16},'Main transect, W to E'))}
+
+    /* marker that follows the radar along the transect */
+    planDot=el('g',{opacity:0,'pointer-events':'none'});
+    planDot.appendChild(el('circle',{r:11,fill:'var(--flag-fill)','fill-opacity':.22}));
+    planDot.appendChild(el('circle',{r:4.5,fill:'var(--flag-fill)',stroke:'var(--snow)','stroke-width':1.5}));
+    svg.appendChild(planDot);
+
+    var sx0=ne[0]-5000*k,sy=small?24:30;
+    svg.appendChild(el('path',{d:'M'+sx0+' '+(sy-4)+'v8M'+sx0+' '+sy+'H'+ne[0]+'M'+ne[0]+' '+(sy-4)+'v8M'+(sx0+2500*k)+' '+(sy-3)+'v6',stroke:'var(--ink)','stroke-width':1.5,fill:'none'}));
+    svg.appendChild(el('text',{x:ne[0],y:sy+18,'text-anchor':'end','class':'t-strong'},'5 km'));
+
+    var nx=nw[0]+(small?88:96),ny=sy+2,deg=th*180/Math.PI;
+    var na=el('g',{transform:'translate('+nx+' '+ny+') rotate('+deg.toFixed(1)+')'});
+    na.appendChild(el('path',{d:'M0 -14L5 8L0 4L-5 8Z',fill:'var(--ink)'}));
+    svg.appendChild(na);
+    svg.appendChild(el('text',{x:nx-20,y:ny+4,'class':'t-strong'},'N'));
+    if(!small)svg.appendChild(el('text',{x:nx+24,y:ny+4},'Fimbul Ice Shelf · 70°14′S 2°30′W'));
+  }
+  function movePlanDot(f){
+    if(!planDot||!tTot)return;
+    if(f==null){planDot.setAttribute('opacity',0);return}
+    var d=Math.max(0,Math.min(1,f))*tTot,i=1;while(i<tLen.length-1&&tLen[i]<d)i++;
+    var u=(d-tLen[i-1])/((tLen[i]-tLen[i-1])||1),x=tPts[i-1][0]+(tPts[i][0]-tPts[i-1][0])*u,y=tPts[i-1][1]+(tPts[i][1]-tPts[i-1][1])*u;
+    planDot.setAttribute('transform','translate('+x.toFixed(1)+' '+y.toFixed(1)+')');planDot.setAttribute('opacity',1);
+  }
+
+  /* ---------- Section: a schematic radargram you can fly ---------- */
+  function rng(seed){return function(){seed=(seed*1664525+1013904223)%4294967296;return seed/4294967296}}
+  var raf,fin,S=null,rdState=$('rd-state'),rdDetail=$('rd-detail'),rdHint=$('rd-hint');
+  function readout(cv){
+    if(!cv){rdState.className='state';rdState.textContent='Intact ice';rdDetail.innerHTML='Layers <b>continuous</b>';return}
+    rdState.className='state hot';rdState.textContent='Basal crevasse';
+    rdDetail.innerHTML='Cuts through <b>'+Math.round(cv.f*100)+'%</b> of the ice';
+  }
+  function idle(){rdState.className='state';rdState.textContent='Radar line ready';rdDetail.textContent='';rdHint.textContent=fine?'Move across the section, or use the arrow keys, to fly the radar':'Drag across the section to fly the radar'}
+  function drawSection(animate){
+    var svg=$('section');if(!svg)return;
+    cancelAnimationFrame(raf);clearTimeout(fin);
+    var W=Math.max(300,Math.round(svg.parentNode.clientWidth)),small=W<620,H=small?200:270;
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML='';
+    var R=rng(7),top=H*.26,base=H*.80;
+    function surf(x){return top+Math.sin(x/W*5)*1.5}
+    function bot(x){return base+Math.sin(x/W*7+1)*4+Math.sin(x/W*19)*2}
+
+    var defs=el('defs',{}),cp=el('clipPath',{id:'sweep'}),cr=el('rect',{x:0,y:0,width:animate?0:W,height:H});
+    cp.appendChild(cr);defs.appendChild(cp);
+    var lg=el('linearGradient',{id:'beamg',x1:0,y1:0,x2:0,y2:1});
+    lg.appendChild(el('stop',{offset:0,'stop-color':'var(--flag-fill)','stop-opacity':.5}));lg.appendChild(el('stop',{offset:1,'stop-color':'var(--flag-fill)','stop-opacity':0}));
+    defs.appendChild(lg);svg.appendChild(defs);
+
+    svg.appendChild(el('rect',{x:0,y:top,width:W,height:H-top,fill:'var(--ocean)'}));
+    svg.appendChild(el('text',{x:W-12,y:H-10,'text-anchor':'end'},'Ocean'));
+    var body=el('g',{'clip-path':'url(#sweep)'});svg.appendChild(body);
+
+    var d='M0 '+surf(0);for(var x=0;x<=W;x+=8)d+='L'+x+' '+surf(x).toFixed(1);
+    d+='L'+W+' '+bot(W).toFixed(1);for(x=W;x>=0;x-=8)d+='L'+x+' '+bot(x).toFixed(1);
+    body.appendChild(el('path',{d:d+'Z',fill:'var(--firn)'}));
+
+    var n=small?5:9,cre=[];
+    for(var i=0;i<n;i++){
+      var cx=W*(.16+.76*(i+.5)/n)+(R()-.5)*W*.03,isBig=(i%3===1),f=isBig?(.80+R()*.09):(.25+R()*.4);
+      cre.push({x:cx,f:f,big:isBig,w:isBig?(small?9:13):(small?6:9)});
+    }
+    cre.forEach(function(cv){
+      var yb=bot(cv.x),yt=yb-(yb-surf(cv.x))*cv.f;cv.yt=yt;cv.yb=yb;
+      body.appendChild(el('path',{d:'M'+(cv.x-cv.w)+' '+(yb+3)+'Q'+(cv.x-1.5)+' '+(yb-(yb-yt)*.45)+' '+cv.x+' '+yt+'Q'+(cv.x+1.5)+' '+(yb-(yb-yt)*.45)+' '+(cv.x+cv.w)+' '+(yb+3)+'Z',fill:'var(--ocean)'}));
+    });
+
+    var layers=small?11:16;
+    for(var j=1;j<=layers;j++){
+      var t=j/(layers+1),amp=1+t*3,ph=R()*6,op=(.8-t*.5).toFixed(2),seg='',pen=false;
+      for(x=0;x<=W;x+=6){
+        var y=surf(x)+(bot(x)-surf(x))*t+Math.sin(x/W*9+ph)*amp+Math.sin(x/W*31+ph*2)*amp*.3,cut=false;
+        for(var q=0;q<cre.length;q++){var cv=cre[q];if(y>cv.yt&&Math.abs(x-cv.x)<cv.w*(y-cv.yt)/(cv.yb-cv.yt)+3){cut=true;break}}
+        if(cut){pen=false}else{seg+=(pen?'L':'M')+x+' '+y.toFixed(1);pen=true}
+      }
+      body.appendChild(el('path',{d:seg,fill:'none',stroke:'var(--glacier)','stroke-width':1,'stroke-opacity':op}));
+    }
+    var sd='';for(x=0;x<=W;x+=8)sd+=(x?'L':'M')+x+' '+surf(x).toFixed(1);
+    body.appendChild(el('path',{d:sd,fill:'none',stroke:'var(--ink)','stroke-width':1.5}));
+
+    cre.forEach(function(cv){
+      body.appendChild(el('path',{d:'M'+(cv.x-11)+' '+(cv.yt+7)+'Q'+cv.x+' '+(cv.yt-7)+' '+(cv.x+11)+' '+(cv.yt+7),fill:'none',stroke:'var(--flag-fill)','stroke-width':1.2,'stroke-opacity':.7}));
+      cv.halo=el('circle',{cx:cv.x,cy:cv.yt,r:10,fill:'var(--flag-fill)','fill-opacity':0});
+      cv.dot=el('circle',{cx:cv.x,cy:cv.yt,r:cv.big?3.5:2.5,fill:'var(--flag-fill)'});
+      body.appendChild(cv.halo);body.appendChild(cv.dot);
+    });
+
+    var dm=cre.filter(function(cv){return cv.big})[small?0:1]||cre[1];
+    var dx=dm.x+dm.w+10,lab=el('g',{'clip-path':'url(#sweep)'});
+    lab.appendChild(el('path',{d:'M'+(dx-4)+' '+dm.yt+'h8M'+dx+' '+dm.yt+'V'+dm.yb+'M'+(dx-4)+' '+dm.yb+'h8',stroke:'var(--flag)','stroke-width':1.2,fill:'none'}));
+    var ty=(dm.yt+dm.yb)/2;
+    lab.appendChild(el('text',{x:dx+8,y:ty-2,'class':'t-flag'},'80 – 89%'));
+    lab.appendChild(el('text',{x:dx+8,y:ty+12,'class':'t-flag'},small?'of thickness':'of ice thickness'));
+    svg.appendChild(lab);
+
+    svg.appendChild(el('text',{x:small?74:96,y:top-9,'class':'t-strong'},'Ice surface'));
+    if(!small){svg.appendChild(el('text',{x:14,y:top+(base-top)*.36,'class':'t-strong'},'Internal layers'));
+      svg.appendChild(el('text',{x:14,y:base-10,'class':'t-strong'},'Basal crevasses'))}
+
+    var dy=top-(small?22:30);
+    var cone=el('path',{fill:'url(#beamg)',opacity:0,'pointer-events':'none'});
+    var beam=el('line',{x1:0,x2:0,y1:dy+6,y2:H,stroke:'var(--flag-fill)','stroke-width':1,'stroke-dasharray':'2 3'});
+    var drone=el('g',{});
+    drone.appendChild(el('path',{d:'M-12 -3h24M-12 -3v-3M12 -3v-3M-17 -6h10M7 -6h10',stroke:'var(--ink)','stroke-width':1.5,fill:'none','stroke-linecap':'round'}));
+    drone.appendChild(el('rect',{x:-5,y:-3,width:10,height:6,rx:1.5,fill:'var(--ink)'}));
+    drone.appendChild(el('rect',{x:-8,y:4,width:16,height:3,rx:1,fill:'var(--flag-fill)'}));
+    svg.appendChild(cone);svg.appendChild(beam);svg.appendChild(drone);
+    var endX=W-(small?34:60);
+    function fly(x,scan){
+      drone.setAttribute('transform','translate('+x.toFixed(1)+' '+dy+')');
+      beam.setAttribute('x1',x);beam.setAttribute('x2',x);beam.setAttribute('opacity',scan?1:0);
+      cone.setAttribute('d','M'+x+' '+(dy+7)+'L'+(x-26)+' '+H+'H'+(x+26)+'Z');cone.setAttribute('opacity',scan?1:0);
+    }
+    function rest(){cr.setAttribute('width',W);fly(endX,false);cre.forEach(function(cv){cv.halo.setAttribute('fill-opacity',0)});movePlanDot(null)}
+    S={W:W,cre:cre,fly:fly,rest:rest,busy:!!animate};
+    if(!animate){rest();return}
+    var t0=null,dur=3400;
+    function step(ts){if(t0==null)t0=ts;var p=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-p,2),x=e*W;
+      cr.setAttribute('width',x);fly(Math.min(x,endX),true);movePlanDot(x/W);
+      if(p<1)raf=requestAnimationFrame(step);else{clearTimeout(fin);S.busy=false;rest()}}
+    cr.setAttribute('width',0);fly(0,true);
+    raf=requestAnimationFrame(function(){raf=requestAnimationFrame(step)});
+    /* if the tab is in the background the frames never fire: show the finished drawing anyway */
+    fin=setTimeout(function(){cancelAnimationFrame(raf);S.busy=false;rest()},dur+1500);
+  }
+  function scrub(ev){
+    if(!S||S.busy)return;
+    var svg=$('section'),r=svg.getBoundingClientRect(),x=Math.max(0,Math.min(S.W,(ev.clientX-r.left)/r.width*S.W));
+    S.fly(x,true);movePlanDot(x/S.W);
+    var hit=null;S.cre.forEach(function(cv){var near=Math.abs(cv.x-x)<cv.w+10;cv.halo.setAttribute('fill-opacity',near?.28:0);if(near)hit=cv});
+    readout(hit);rdHint.textContent='The marker on the plan follows along the transect';
+  }
+  var sec=$('section');
+  sec.addEventListener('pointermove',scrub);sec.addEventListener('pointerdown',scrub);
+  sec.addEventListener('pointerleave',function(){if(S&&!S.busy){S.rest();idle()}});
+  var kx=null;
+  sec.addEventListener('keydown',function(ev){
+    if(!S||S.busy||(ev.key!=='ArrowLeft'&&ev.key!=='ArrowRight'))return;ev.preventDefault();
+    var r=sec.getBoundingClientRect();if(kx==null)kx=.5;kx=Math.max(0,Math.min(1,kx+(ev.key==='ArrowRight'?.02:-.02)));
+    scrub({clientX:r.left+kx*r.width});
+  });
+  sec.addEventListener('blur',function(){kx=null;if(S&&!S.busy){S.rest();idle()}});
+  idle();
+
+  var lastW=0;
+  function render(first){var w=$('plan').parentNode.clientWidth;if(w===lastW)return;lastW=w;drawPlan();drawSection(first&&!reduce)}
+  render(true);
+  setTimeout(function(){root.classList.add('drawn')},3800);
+  var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){render(false)},120)});
+  $('replay').addEventListener('click',function(){
+    root.classList.remove('drawn');drawPlan();drawSection(!reduce);idle();
+    setTimeout(function(){root.classList.add('drawn')},3800);
+  });
+
+  /* ---------- Flight strip: minutes per flight, from the RPAS logbook ---------- */
+  var LOG=[['System tests',[20,20,20,20]],['DT lines',[20,20,10]],['Perpendicular lines',[20,20,10]],['Crevasse line',[15]],['Long lines',[15,30,30,30,30,30,30,30,30,30]],['West grid',[25,25,25,25,25,25,25]]];
+  var strip=$('strip'),sread=$('strip-read'),sdef=sread.innerHTML,nn=0;
+  LOG.forEach(function(r){
+    var tot=r[1].reduce(function(x,y){return x+y},0),row=document.createElement('div');row.className='strip-row';
+    var h=Math.floor(tot/60),m=tot%60;
+    row.innerHTML='<span class="lab">'+r[0]+'</span><span class="blocks" role="img" aria-label="'+r[1].length+' flights"></span><span class="tot">'+(h?h+' h ':'')+(m?m+' m':'')+'</span>';
+    var bl=row.querySelector('.blocks');
+    r[1].forEach(function(v,i){var bk=document.createElement('i');bk.style.width=(v/3)+'%';bk.style.setProperty('--n',nn++);
+      bk.addEventListener('pointerenter',function(){sread.innerHTML='<b>'+r[0]+'</b> · flight '+(i+1)+' of '+r[1].length+' · <b>'+v+' min</b><br>DJI Matrice 350 RTK · visual line of sight'});
+      bl.appendChild(bk)});
+    strip.appendChild(row)});
+  strip.addEventListener('pointerleave',function(){sread.innerHTML=sdef});
+
+  /* ---------- Reveal, count-up ---------- */
+  function countUp(n){
+    var to=parseFloat(n.dataset.count),dec=+(n.dataset.dec||0);if(reduce||n.dataset.done)return;n.dataset.done=1;
+    var t0=null,from=to>20?Math.round(to*.5):0;
+    setTimeout(function(){n.textContent=to.toFixed(dec)},1800);
+    requestAnimationFrame(function tick(ts){if(t0==null)t0=ts;var p=Math.min(1,(ts-t0)/1300),e=1-Math.pow(1-p,3);n.textContent=(from+(to-from)*e).toFixed(dec);if(p<1)requestAnimationFrame(tick)});
+  }
+  var revealEls=[].slice.call(document.querySelectorAll('[data-r],#strip,#marks'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+      e.target.classList.add('in');io.unobserve(e.target);
+      [].forEach.call(e.target.querySelectorAll('[data-count]'),countUp);
+      if(e.target.hasAttribute('data-count'))countUp(e.target);
+    })},{rootMargin:'0px 0px -6% 0px',threshold:.1});
+    revealEls.forEach(function(n){io.observe(n)});
+  }else revealEls.forEach(function(n){n.classList.add('in')});
+
+  /* ---------- Method stepper ---------- */
+  (function(){
+    var box=$('method'),nav=box.querySelector('.method-nav'),btns=[].slice.call(nav.children),steps=[].slice.call(box.querySelectorAll('.steps li')),cur=0,timer,auto=!reduce,seen=false,over=false;
+    function show(i){cur=i;btns.forEach(function(bn,k){bn.classList.toggle('on',k===i);bn.classList.toggle('done',k<i);bn.setAttribute('aria-pressed',k===i?'true':'false')});
+      steps.forEach(function(st,k){st.classList.toggle('on',k===i)})}
+    function run(){clearTimeout(timer);nav.classList.remove('auto');if(!auto||!seen||over)return;
+      void nav.offsetWidth;nav.classList.add('auto');timer=setTimeout(function(){show((cur+1)%steps.length);run()},5000)}
+    btns.forEach(function(bn,i){bn.addEventListener('click',function(){auto=false;show(i);run()})});
+    show(0);
+    if('IntersectionObserver' in window)new IntersectionObserver(function(es){seen=es[0].isIntersecting;run()},{threshold:.5}).observe(box);
+    box.addEventListener('pointerenter',function(){over=true;run()});
+    box.addEventListener('pointerleave',function(){over=false;run()});
+  })();
+
+  /* ---------- Scroll: progress bar, timeline fill, active nav ---------- */
+  var prog=$('progress'),xp=$('xp'),fill=document.createElement('span');fill.className='xp-fill';fill.setAttribute('aria-hidden','true');xp.appendChild(fill);
+  var xpItems=[].slice.call(xp.querySelectorAll('li')),links=[].slice.call(document.querySelectorAll('.nav a')),secs=links.map(function(l){return document.querySelector(l.getAttribute('href'))}),tick=false;
+  function onScroll(){tick=false;
+    var h=root.scrollHeight-innerHeight,y=scrollY;prog.style.transform='scaleX('+(h>0?y/h:0)+')';
+    var r=xp.getBoundingClientRect(),mid=innerHeight*.62,f=Math.max(0,Math.min(1,(mid-r.top)/r.height));fill.style.transform='scaleY('+f+')';
+    xpItems.forEach(function(li){li.classList.toggle('lit',li.getBoundingClientRect().top+34<mid)});
+    var on=-1;secs.forEach(function(sn,i){if(sn&&sn.getBoundingClientRect().top<innerHeight*.4)on=i});
+    links.forEach(function(l,i){l.classList.toggle('on',i===on);if(i===on)l.setAttribute('aria-current','true');else l.removeAttribute('aria-current')});
+  }
+  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+
+  /* ---------- Pointer effects (mouse only) ---------- */
+  if(fine){
+    [].forEach.call(document.querySelectorAll('[data-glow]'),function(cd){cd.addEventListener('pointermove',function(ev){var r=cd.getBoundingClientRect();cd.style.setProperty('--mx',(ev.clientX-r.left)+'px');cd.style.setProperty('--my',(ev.clientY-r.top)+'px')})});
+  }
+  if(fine&&!reduce){
+    [].forEach.call(document.querySelectorAll('[data-magnet]'),function(bn){
+      bn.addEventListener('pointermove',function(ev){var r=bn.getBoundingClientRect();bn.style.transform='translate('+((ev.clientX-r.left-r.width/2)*.18).toFixed(1)+'px,'+((ev.clientY-r.top-r.height/2)*.3).toFixed(1)+'px)'});
+      bn.addEventListener('pointerleave',function(){bn.style.transform=''})});
+    var z=$('zoom'),zf=z.parentNode;
+    zf.addEventListener('pointermove',function(ev){var r=z.getBoundingClientRect(),px=(ev.clientX-r.left)/r.width-.5,py=(ev.clientY-r.top)/r.height-.5;z.style.transform='rotateY('+(px*7).toFixed(2)+'deg) rotateX('+(-py*6).toFixed(2)+'deg) scale(1.015)'});
+    zf.addEventListener('pointerleave',function(){z.style.transform=''});
+  }
+
+  /* ---------- Map lightbox ---------- */
+  var lb=$('lightbox'),lbImg=$('lb-img'),lbScroll=$('lb-scroll');
+  $('zoom').addEventListener('click',function(){if(!lbImg.getAttribute('src'))lbImg.src='assets/fimbul-campaign-map.jpg';lbScroll.classList.remove('big');if(lb.showModal)lb.showModal();else window.open('assets/fimbul-campaign-map.jpg','_blank')});
+  $('lb-close').addEventListener('click',function(){lb.close()});
+  function preload(){if(!lbImg.getAttribute('src'))lbImg.src='assets/fimbul-campaign-map.jpg'}
+  $('zoom').addEventListener('pointerenter',preload);$('zoom').addEventListener('focus',preload);
+  lbImg.addEventListener('click',function(){lbScroll.classList.toggle('big')});
+  lb.addEventListener('click',function(ev){if(ev.target===lbScroll)lb.close()});
+
+  $('kit').addEventListener('click',function(){this.classList.toggle('paused')});
+
+  /* ---------- Copy email, theme ---------- */
+  var cpb=$('copy'),cl=$('copy-label');
+  cpb.addEventListener('click',function(){var m=cpb.dataset.email;
+    function done(ok){cl.textContent=ok?'Copied':'Copy failed. Select the address instead';setTimeout(function(){cl.textContent='Copy email'},2400)}
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(m).then(function(){done(true)},function(){done(false)});else done(false)});
+  (function(){var mc=document.querySelector('meta[name=theme-color]'),cur=root.dataset.theme||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');if(mc)mc.content=cur==='dark'?'#060E16':'#F2F6F8'})();
+  $('theme').addEventListener('click',function(){
+    var cur=root.dataset.theme||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'),nx=cur==='dark'?'light':'dark';
+    root.dataset.theme=nx;try{localStorage.setItem('theme',nx)}catch(e){}
+    var mc=document.querySelector('meta[name=theme-color]');if(mc)mc.content=nx==='dark'?'#060E16':'#F2F6F8';
+  });
+})();
+</script>
+</body>
+</html>
