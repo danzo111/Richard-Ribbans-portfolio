@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapping the Fimbul Ice Shelf by Drone · Richard Ribbans</title>
+<meta name="description" content="How Richard Ribbans planned and flew a drone-borne ground-penetrating radar survey of Antarctica's Fimbul Ice Shelf and built a 3D model of the crevasses inside it.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#060E16">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mapping the inside of the Fimbul Ice Shelf by drone">
+<meta property="og:description" content="28 radar flights, a 21 × 6 km survey area and a 3D model showing crevasses that cut through 80 to 89% of the ice.">
+<meta property="og:image" content="assets/richard-fimbul-ice-shelf.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23060E16'/%3E%3Cpath d='M5 21h22' stroke='%23EAF2F6' stroke-width='2'/%3E%3Cpath d='M11 27l3-13 3 13zM19 27l2-9 2 9z' fill='%23FF6B2C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Hanken+Grotesk:wght@400..700&family=Instrument+Serif:ital@0;1&family=Spline+Sans+Mono:wght@400..600&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="atmo" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="index.html">Richard Ribbans<b>/</b></a>
+    <nav class="nav" aria-label="Site">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#process">How it works</a>
+      <a class="on" href="index.html#projects" aria-current="true">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm btn-quote" href="mailto:ricrib@hotmail.co.za?subject=Survey%20quote%20request&amp;body=Site%20location%3A%0AWhat%20needs%20surveying%3A%0AWhat%20you%20need%20back%20(plan%2C%20model%2C%20report)%3A%0ADeadline%3A%0A" aria-label="Request a quote by email">
+      <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg><span>Get a quote</span>
+    </a>
+    <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 2a7 7 0 0 1 0 14z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<article>
+  <header class="art-hero">
+    <div class="wrap">
+      <a class="back" href="index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All projects</a>
+      <h1 class="art-title">Mapping the inside of an ice shelf <em>by drone</em></h1>
+      <p class="art-lede">Ice shelves crack from underneath, where nobody can see. For my master’s research I flew ground-penetrating radar over Antarctica’s Fimbul Ice Shelf and built a 3D model of what is happening inside it.</p>
+      <dl class="art-meta" data-r>
+        <div><dt>My role</dt><dd>Survey planning, drone pilot, processing</dd></div>
+        <div><dt>When</dt><dd>January 2025 fieldwork</dd></div>
+        <div><dt>Where</dt><dd>Fimbul Ice Shelf, Antarctica</dd></div>
+        <div><dt>For</dt><dd>MSc research, University of Cape Town</dd></div>
+      </dl>
+      <figure class="art-cover" data-r>
+        <img src="assets/richard-fimbul-ice-shelf.jpg" width="880" height="1099" fetchpriority="high" alt="Richard Ribbans on the Fimbul Ice Shelf with the DJI Matrice 350 RTK and radar boom, a Phantom 4 drone and GNSS receivers on tripods">
+        <figcaption>On the ice shelf on 20 January 2025, with the radar drone on the left and GNSS receivers on the right.</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="prose">
+      <h2>The problem</h2>
+      <p>The Fimbul Ice Shelf is cut by crevasses that open from its base and climb towards the surface. How far they have climbed matters for how stable the shelf is, but they are hidden under snow and can’t be seen from above.</p>
+      <p>The usual ways of looking both fall short. Towing a radar across the surface is slow and puts people on crevassed ice. Satellite radar is safe, but too coarse to show the shape of the base. The features I was after had not been mapped since 2011.</p>
+      <p>After a scoping review of how ice shelves are surveyed, I settled on a third option: <strong>carry the radar on a drone</strong>, low and slow, so nobody has to walk the line.</p>
+
+      <div class="finding" data-r>
+        <strong><span data-count="80">80</span> – <span data-count="89">89</span><small>%</small></strong>
+        <span>of the ice shelf’s thickness is already cut through by basal crevasses at its western calving face. That is the headline result of the 3D model.</span>
+      </div>
+
+      <h2>Planning the campaign</h2>
+      <p>The fieldwork was part of the SAAS 2024/25 Antarctic Field Campaign. Before leaving I drew the field operations map for the team: the 21 × 6&nbsp;km working area, known and suspected crevasses, the survey blocks, the supply route back to base and the coordinates of every planned instrument site.</p>
+
+      <figure class="framed wide" data-r>
+        <button class="zoom" id="zoom" type="button" aria-haspopup="dialog" aria-label="Open the full field operations map">
+          <img src="assets/fimbul-locality-plan.jpg" width="1600" height="1090" loading="lazy" alt="Locality plan of the working area on the Fimbul Ice Shelf, with the 21 by 6 kilometre project area, known and hidden crevasses, and the T-intersection and West Grid survey blocks">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.500M11 8.500v5M8.5 11h5"/></svg>Open full map</span>
+        </button>
+        <figcaption>The field operations map I produced for the campaign, in Antarctic Polar Stereographic (EPSG:3031). The full sheet includes the supply route and coordinate tables.</figcaption>
+      </figure>
+
+      <h2>The equipment</h2>
+      <ul class="dots">
+        <li><strong>Aircraft:</strong> DJI Matrice 350 RTK</li>
+        <li><strong>Radar:</strong> Zond Aero LF ground-penetrating radar at 100&nbsp;MHz, a low frequency chosen to reach deep into the ice</li>
+        <li><strong>Positioning:</strong> Trimble R4S GNSS receivers for ground control</li>
+        <li><strong>Flight profile:</strong> 5&nbsp;m above the surface at 4&nbsp;m/s</li>
+      </ul>
+
+      <h2>Flying the lines</h2>
+      <p>I flew every survey line as pilot in command, within visual line of sight. The flights started with system tests, then moved on to transects along and across the shelf, a line targeting a known crevasse, and a grid over the western block.</p>
+
+      <div class="nums wide">
+        <div class="num glass" data-r data-glow><b><span data-count="28">28</span></b><span>radar flights</span></div>
+        <div class="num glass" data-r data-glow style="--i:1"><b><span data-count="10.9" data-dec="1">10.9</span><small>h</small></b><span>as pilot in command</span></div>
+        <div class="num glass" data-r data-glow style="--i:2"><b><span data-count="5">5</span><small>m</small></b><span>flying height above the ice</span></div>
+        <div class="num glass" data-r data-glow style="--i:3"><b><span data-count="100">100</span><small>MHz</small></b><span>radar frequency</span></div>
+      </div>
+
+      <div class="strip-wrap glass wide" data-r data-glow>
+        <div class="strip-title mono"><span>Radar flights by survey block</span><span>1 block = 1 flight · width = time</span></div>
+        <div class="strip" id="strip"></div>
+        <p class="strip-read" id="strip-read">Point at a block to read the flight.<br>From my RPAS pilot logbook.</p>
+      </div>
+
+      <h2>From radar to model</h2>
+      <p>Raw radargrams are noisy, and the layering in this ice is fine and dense. I tested how best to clean the data, found that the standard feature-detection methods couldn’t cope, and developed two extraction methods of my own. The result was a set of georeferenced point clouds that I assembled into a 3D model of the shelf.</p>
+      <p>The processing has its own write-up: <a href="gpr-processing-pipeline.html">From radargram to 3D model</a>.</p>
+
+      <h2>What the model shows</h2>
+      <p>At the western calving face, basal crevasses have propagated through 80 to 89% of the total ice thickness. That puts a number on a structural risk to the shelf, and gives later surveys a baseline to measure change against.</p>
+
+      <h2>What I’d do next</h2>
+      <ul class="dots">
+        <li>Use variable permittivity profiles through the ice instead of a single value, to tighten the depth estimates.</li>
+        <li>Feed the drone’s pitch, roll and heading into the processing, so the radar’s pointing direction is accounted for.</li>
+      </ul>
+    </div>
+
+    <div class="art-end">
+      <article class="card glass lift" data-r data-glow>
+        <p class="meta">Next article</p>
+        <h3>From radargram to 3D model: my GPR processing pipeline</h3>
+        <p>The processing behind this project, step by step.</p>
+        <a class="go" href="gpr-processing-pipeline.html">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="card glass lift" data-r data-glow style="--i:1">
+        <p class="meta">Work with me</p>
+        <h3>Have a site that’s hard to measure?</h3>
+        <p>Drone surveys, GNSS control and radar, from planning to deliverable.</p>
+        <a class="go" href="index.html#contact">Request a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer class="foot" style="margin-top:clamp(56px,8vw,96px)">
+  <div class="wrap"><span>Richard Ribbans · Land surveying, GNSS and drone surveys</span><span>Created by <a href="https://danzo111.github.io/Daniel-Kimani-Njoroge-online-cv-portfolio/" target="_blank" rel="noopener">Daniel Njoroge</a></span></div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Field operations map, SAAS 2024/25 Antarctic Field Campaign">
+  <div class="lb-bar"><b>Field operations map</b><span>Click the map to zoom</span>
+    <button class="btn btn-sm" id="lb-close" type="button">Close</button></div>
+  <div class="lb-scroll" id="lb-scroll"><img id="lb-img" alt="Full field operations map for the SAAS 2024/25 Antarctic Field Campaign: locality plan, supply route, key plan and coordinate tables" width="2600" height="1838"></div>
+</dialog>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
