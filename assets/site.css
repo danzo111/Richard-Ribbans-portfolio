@@ -485,3 +485,30 @@ button{font:inherit;color:inherit}
 .art-end{max-width:1000px;margin:clamp(56px,8vw,96px) auto 0;display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,22px)}
 .art-end .card h3{font-size:1.5rem}
 @media (max-width:760px){.art-end{grid-template-columns:1fr}}
+
+/* ===== Multi-page ===== */
+.head-in{position:relative}
+.menu{display:none;width:40px;height:40px;place-items:center;border:1px solid var(--stroke);border-radius:50%;background:transparent;cursor:pointer;flex:none;touch-action:manipulation}
+.menu:hover{border-color:var(--ink)}
+@media (max-width:900px){
+  .menu{display:grid}
+  .nav{position:absolute;top:calc(100% + 10px);left:0;right:0;margin:0;flex-direction:column;gap:2px;padding:10px;border-radius:22px;background:var(--bg-2);border:1px solid var(--stroke-2);box-shadow:var(--shadow)}
+  .head.open .nav{display:flex}
+  .nav a{padding:14px 16px;font-size:1.02rem}
+}
+.page-hero{padding-bottom:0}
+.page-hero .kicker{margin-bottom:4px}
+.sec.tight{padding-top:clamp(36px,5vw,64px)}
+.contact.page{margin-top:clamp(108px,13vw,150px)}
+.contact.page h1{font-family:var(--f-display);font-stretch:88%;font-weight:700;font-size:clamp(2.7rem,8vw,6.6rem);line-height:.92;letter-spacing:-.03em;max-width:12ch;margin:0}
+.contact.page h1 em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.02em;color:#8FD3EE}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,18px)}
+.tiles li{padding:0}
+.tiles a{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-content:start;height:100%;padding:22px;text-decoration:none}
+.tiles .ico{grid-row:1/3;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--glacier-dim);color:var(--glacier)}
+.tiles .ico svg{width:23px;height:23px}
+.tiles h3{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:1.24rem;line-height:1.1;letter-spacing:-.025em;align-self:end}
+.tiles p{font-size:.92rem;line-height:1.45;color:var(--ink-2)}
+.tiles li:hover h3{color:var(--flag)}
+@media (max-width:980px){.tiles{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.tiles{grid-template-columns:1fr}}

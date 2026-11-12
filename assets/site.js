@@ -330,3 +330,11 @@ var PLAN={"tracks":[{"date":"2025-01-12","km":1.4,"pts":[[-2.42103,-70.23261],[-
     var mc=document.querySelector('meta[name=theme-color]');if(mc)mc.content=nx==='dark'?'#060E16':'#F2F6F8';
   });
 })();
+
+(function(){
+  var h=document.getElementById('head'),m=document.getElementById('menu');if(!h||!m)return;
+  function set(o){h.classList.toggle('open',o);m.setAttribute('aria-expanded',o?'true':'false')}
+  m.addEventListener('click',function(){set(!h.classList.contains('open'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+  document.addEventListener('click',function(e){if(!h.contains(e.target))set(false)});
+})();

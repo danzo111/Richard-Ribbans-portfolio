@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#060E16">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Richard Ribbans · Land Surveying, GNSS &amp; Drone Surveys">
+<meta property="og:title" content="Richard Ribbans · Land Surveying, GNSS &amp; Drone Surveys · Western Cape">
 <meta property="og:description" content="Land surveying, GNSS surveys, drone mapping, ground-penetrating radar and 3D laser scanning in the Western Cape.">
 <meta property="og:image" content="assets/richard-fimbul-ice-shelf.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23060E16'/%3E%3Cpath d='M5 21h22' stroke='%23EAF2F6' stroke-width='2'/%3E%3Cpath d='M11 27l3-13 3 13zM19 27l2-9 2 9z' fill='%23FF6B2C'/%3E%3C/svg%3E">
@@ -24,19 +24,21 @@
 <div class="atmo" aria-hidden="true"></div>
 <div class="progress" id="progress" aria-hidden="true"></div>
 
-<header class="head">
+<header class="head" id="head">
   <div class="head-in">
-    <a class="brand" href="#top">Richard Ribbans<b>/</b></a>
-    <nav class="nav" aria-label="Sections">
-      <a href="#services">Services</a>
-      <a href="#process">How it works</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <a class="brand" href="index.html">Richard Ribbans<b>/</b></a>
+    <nav class="nav" id="nav" aria-label="Site">
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <a class="btn btn-sm btn-quote" href="mailto:ricrib@hotmail.co.za?subject=Survey%20quote%20request&amp;body=Site%20location%3A%0AWhat%20needs%20surveying%3A%0AWhat%20you%20need%20back%20(plan%2C%20model%2C%20report)%3A%0ADeadline%3A%0A" aria-label="Request a quote by email">
+    <a class="btn btn-sm btn-quote" href="contact.html">
       <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg><span>Get a quote</span>
     </a>
+    <button class="menu" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 5.5h12M3 9h12M3 12.5h12"/></svg>
+    </button>
     <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">
       <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 2a7 7 0 0 1 0 14z" fill="currentColor"/></svg>
     </button>
@@ -55,9 +57,9 @@
         <p class="hero-tag">Land surveying, GNSS and drone surveys, <em>measured properly.</em></p>
         <p class="lede">Boundary and site surveys, GPS control, drone mapping, ground-penetrating radar and 3D scanning. I’ve surveyed building sites in Cape Town and an ice shelf in Antarctica, and I bring the same care to both.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" data-magnet href="mailto:ricrib@hotmail.co.za?subject=Survey%20quote%20request&amp;body=Site%20location%3A%0AWhat%20needs%20surveying%3A%0AWhat%20you%20need%20back%20(plan%2C%20model%2C%20report)%3A%0ADeadline%3A%0A">Request a quote
+          <a class="btn btn-primary" data-magnet href="contact.html">Request a quote
             <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-          <a class="btn" data-magnet href="#services">See services
+          <a class="btn" data-magnet href="services.html">See services
             <svg class="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
         </div>
       </div>
@@ -76,249 +78,64 @@
   </div>
 </section>
 
-<section class="sec" id="services" aria-labelledby="services-title">
+<section class="sec" aria-labelledby="home-services">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker" data-r>Services</p>
-      <h2 class="h2" id="services-title" data-r>What I can <em>survey for you</em></h2>
-      <p class="lede" data-r style="--i:1">One person to call for the fieldwork and the deliverable. Tell me what you need to know about your site and I’ll work out the right way to measure it.</p>
+    <div class="sec-top">
+      <div class="sec-head">
+        <p class="kicker" data-r>Services</p>
+        <h2 class="h2" id="home-services" data-r>What I can <em>survey for you</em></h2>
+      </div>
+      <a class="btn" data-magnet data-r href="services.html">All services <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    <ul class="does six">
-      <li class="glass lift" data-r data-glow>
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/></svg></span>
-        <h3>GNSS and GPS surveys</h3>
-        <p>Survey-grade positioning with base and rover receivers, tied to the national coordinate system.</p>
-        <ul class="gets">
-          <li>Control networks and benchmarks</li>
-          <li>Ground control for drone and LiDAR flights</li>
-          <li>Setting out and as-built checks</li>
-        </ul>
-        <p class="kit">Trimble R4S · RTK and static</p>
-      </li>
-      <li class="glass lift" data-r data-glow style="--i:1">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c3-5 5-5 8 0s5 5 10 0M3 12c3-5 5-5 8 0s5 5 10 0M3 6h18"/></svg></span>
-        <h3>Topographic and engineering surveys</h3>
-        <p>Accurate site plans for architects, engineers and developers before design starts and while building is under way.</p>
-        <ul class="gets">
-          <li>Contour and detail surveys</li>
-          <li>Site and building setting out</li>
-          <li>Volumes, levels and as-built plans</li>
-        </ul>
-        <p class="kit">GNSS · total station · CAD and GIS plans</p>
-      </li>
-      <li class="glass lift" data-r data-glow style="--i:2">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 13h7v7h-7zM11 7.500h4.500V13M13 16.500H8.500V11"/></svg></span>
-        <h3>Cadastral and sectional title</h3>
-        <p>Property boundary work under South African land survey law, from finding a lost beacon to registering a new scheme.</p>
-        <ul class="gets">
-          <li>Beacon relocation and boundary checks</li>
-          <li>Subdivisions, consolidations and servitudes</li>
-          <li>Sectional title plans</li>
-        </ul>
-        <p class="fine">I’m a registered candidate land surveyor. Cadastral work is done with, and signed off by, a registered Professional Land Surveyor.</p>
-      </li>
-      <li class="glass lift" data-r data-glow>
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><path d="M5 6h14M9 6l1.5 5h3L15 6M10.5 11v3h3v-3M8 20l4-3 4 3"/></svg></span>
-        <h3>Drone mapping</h3>
-        <p>Aerial surveys by a licensed remote pilot, planned around what you need the data to show.</p>
-        <ul class="gets">
-          <li>Orthophotos and elevation models</li>
-          <li>Stockpile and earthwork volumes</li>
-          <li>Progress and condition records</li>
-        </ul>
-        <p class="kit">DJI Matrice 350 RTK · Phantom 4 Pro · Pix4D · Metashape</p>
-      </li>
-      <li class="glass lift" data-r data-glow style="--i:1">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12c4 0 4 2 9 2s5-2 9-2M3 17c4 0 4 2 9 2s5-2 9-2M12 3v4"/></svg></span>
-        <h3>Ground-penetrating radar</h3>
-        <p>Drone-borne radar surveys and the processing that turns radargrams into something you can read and measure.</p>
-        <ul class="gets">
-          <li>Survey design and low-level radar flights</li>
-          <li>Noise reduction and feature extraction</li>
-          <li>Georeferenced subsurface models</li>
-        </ul>
-        <p class="kit">Zond Aero LF · my own processing pipeline</p>
-      </li>
-      <li class="glass lift" data-r data-glow style="--i:2">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.500v9L12 21l-8-4.500v-9zM12 12l8-4.500M12 12L4 7.500M12 12v9"/></svg></span>
-        <h3>3D scanning, LiDAR and mapping</h3>
-        <p>Laser scans, LiDAR and photogrammetry turned into point clouds, models and maps other people can pick up and use.</p>
-        <ul class="gets">
-          <li>Building and structure scans</li>
-          <li>Point cloud registration and cleaning</li>
-          <li>GIS mapping and cartography</li>
-        </ul>
-        <p class="kit">Terrestrial laser scanner · CloudCompare · ArcGIS Pro · QGIS</p>
-      </li>
+    <ul class="tiles">
+      <li class="glass lift" data-r data-glow style="--i:0"><a href="services.html#svc-1"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/></svg></span><h3>GNSS and GPS surveys</h3><p>Survey-grade positioning with base and rover receivers, tied to the national coordinate system.</p></a></li>
+      <li class="glass lift" data-r data-glow style="--i:1"><a href="services.html#svc-2"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c3-5 5-5 8 0s5 5 10 0M3 12c3-5 5-5 8 0s5 5 10 0M3 6h18"/></svg></span><h3>Topographic and engineering surveys</h3><p>Accurate site plans for architects, engineers and developers before design starts and while building is under way.</p></a></li>
+      <li class="glass lift" data-r data-glow style="--i:2"><a href="services.html#svc-3"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 13h7v7h-7zM11 7.500h4.500V13M13 16.500H8.500V11"/></svg></span><h3>Cadastral and sectional title</h3><p>Property boundary work under South African land survey law, from finding a lost beacon to registering a new scheme.</p></a></li>
+      <li class="glass lift" data-r data-glow style="--i:0"><a href="services.html#svc-4"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><path d="M5 6h14M9 6l1.5 5h3L15 6M10.5 11v3h3v-3M8 20l4-3 4 3"/></svg></span><h3>Drone mapping</h3><p>Aerial surveys by a licensed remote pilot, planned around what you need the data to show.</p></a></li>
+      <li class="glass lift" data-r data-glow style="--i:1"><a href="services.html#svc-5"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12c4 0 4 2 9 2s5-2 9-2M3 17c4 0 4 2 9 2s5-2 9-2M12 3v4"/></svg></span><h3>Ground-penetrating radar</h3><p>Drone-borne radar surveys and the processing that turns radargrams into something you can read and measure.</p></a></li>
+      <li class="glass lift" data-r data-glow style="--i:2"><a href="services.html#svc-6"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.500v9L12 21l-8-4.500v-9zM12 12l8-4.500M12 12L4 7.500M12 12v9"/></svg></span><h3>3D scanning, LiDAR and mapping</h3><p>Laser scans, LiDAR and photogrammetry turned into point clouds, models and maps other people can pick up and use.</p></a></li>
     </ul>
   </div>
 </section>
 
-<section class="sec" id="process" aria-labelledby="process-title">
+<section class="sec" aria-labelledby="home-projects">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker" data-r>How it works</p>
-      <h2 class="h2" id="process-title" data-r>From first call <em>to final plan</em></h2>
-    </div>
-    <ol class="run">
-      <li data-r><h3>Tell me about the site</h3><p>Where it is, what you need to know and when you need it. A sketch or an erf number is enough to start.</p></li>
-      <li data-r style="--i:1"><h3>Quote and plan</h3><p>I recommend the method that fits the job, whether that’s GNSS, a total station, a drone or a scanner, and send you a quote.</p></li>
-      <li data-r style="--i:2"><h3>Fieldwork</h3><p>I collect the data on site, check it before I leave and keep you posted if anything unexpected turns up.</p></li>
-      <li data-r style="--i:3"><h3>Deliverables</h3><p>You get plans, models or reports in the formats your architect, engineer or conveyancer asked for.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="sec" id="projects" aria-labelledby="projects-title">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker" data-r>Projects</p>
-      <h2 class="h2" id="projects-title" data-r>Work I’ve <em>delivered</em></h2>
-    </div>
-
-    <article class="feat" data-r>
-      <div class="feat-head">
-        <div>
-          <p class="mono" style="color:var(--flag)">Featured project · Antarctica · 2024 – 2025</p>
-          <h3>Mapping the inside of the Fimbul Ice Shelf by drone</h3>
-          <p class="lede">28 radar flights over a 21 × 6&nbsp;km survey area, turned into a 3D model showing crevasses that cut through 80 to 89% of the ice.</p>
-        </div>
-        <a class="btn btn-primary" data-magnet href="fimbul-ice-shelf.html">Read the full project
-          <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="sec-top">
+      <div class="sec-head">
+        <p class="kicker" data-r>Projects</p>
+        <h2 class="h2" id="home-projects" data-r>Work I’ve <em>delivered</em></h2>
       </div>
-      <figure class="sheet" aria-labelledby="sheet-note">
-        <div class="sheet-bar">
-          <i class="dot" aria-hidden="true"></i>
-          <span class="mono">Fimbul Ice Shelf survey · January 2025</span>
-          <button class="btn btn-sm" id="replay" type="button">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.6-5.900M4 4v5h5"/></svg>Replay flight
-          </button>
-        </div>
-        <div class="panel" id="plan-panel">
-          <span class="panel-tag">Plan</span>
-          <svg id="plan" role="img" aria-label="Plan of the 21 by 6 kilometre survey area on the Fimbul Ice Shelf, showing the main transect, launch sites and two recorded flight tracks"></svg>
-          <div class="tip" id="tip" aria-hidden="true"></div>
-        </div>
-        <div class="legend" aria-hidden="true">
-          <span><svg viewBox="0 0 26 10"><rect x="1" y="1" width="24" height="8" rx="1" fill="none" stroke="var(--flag-fill)" stroke-width="1.5"/></svg>Survey area</span>
-          <span><svg viewBox="0 0 26 10"><path d="M0 5h26" stroke="var(--ink-2)" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Main transect</span>
-          <span><svg viewBox="0 0 26 10"><path d="M13 1v8M9 5h8" stroke="var(--ink)" stroke-width="1.5"/></svg>Launch sites</span>
-          <span><svg viewBox="0 0 26 10"><path d="M0 5h26" stroke="var(--glacier)" stroke-width="2"/></svg>Flight tracks from the drone’s logs</span>
-        </div>
-        <div class="panel">
-          <span class="panel-tag">Section</span>
-          <svg id="section" tabindex="0" role="img" aria-label="Schematic cross-section of the ice shelf: radar layers under the surface and basal crevasses rising 80 to 89 percent of the way up from the base"></svg>
-        </div>
-        <div class="readout" aria-live="polite">
-          <span class="state" id="rd-state">Radar line ready</span>
-          <span id="rd-detail"></span>
-          <span class="hint" id="rd-hint" aria-hidden="true">Move across the section to fly the radar</span>
-        </div>
-      </figure>
-    </article>
-    <p class="sheet-note" id="sheet-note">Plan: launch sites and flight tracks are drawn from the drone’s own flight logs; point at them for dates. Section: a schematic of what the radar found under the surface, not to scale.</p>
-
-    <div class="more three">
-      <article class="card glass lift" data-r data-glow>
+      <a class="btn" data-magnet data-r href="projects.html">All projects <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="more">
+      <article class="card glass lift has-pic" data-r data-glow>
+        <figure class="pic"><img src="assets/fimbul-locality-plan.jpg" width="1600" height="1090" loading="lazy" alt="Locality plan of the survey area on the Fimbul Ice Shelf, showing the project area and mapped crevasses"><figcaption>Field operations map · Fimbul Ice Shelf</figcaption></figure>
+        <p class="meta">Featured project · Antarctica · 2024 – 2025</p>
+        <h3>Mapping the inside of the Fimbul Ice Shelf by drone</h3>
+        <p>28 radar flights over a 21 × 6&nbsp;km survey area, turned into a 3D model showing crevasses that cut through 80 to 89% of the ice.</p>
+        <a class="go" href="fimbul-ice-shelf.html">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="card glass lift" data-r data-glow style="--i:1">
         <div class="miniflow" aria-hidden="true"><span>Radargram</span><span>→</span><span>Denoise</span><span>→</span><span>Extract</span><span>→</span><span>Point cloud</span><span>→</span><span>3D model</span></div>
         <p class="meta">Method · Ground-penetrating radar</p>
         <h3>From radargram to 3D model: my GPR processing pipeline</h3>
         <p>How raw drone radar data becomes a georeferenced model, including two extraction methods I developed when the standard ones fell short.</p>
         <a class="go" href="gpr-processing-pipeline.html">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
-      <article class="card glass lift has-pic" data-r data-glow style="--i:1">
-        <figure class="pic"><img src="assets/gnss-base-station.jpg" width="1100" height="784" loading="lazy" alt="GNSS base station on a yellow survey tripod set up over a marked point, overlooking the sea on the Cape coast"><figcaption>GNSS base station on the Cape coast · July&nbsp;2023</figcaption></figure>
-        <p class="meta">LiDAR · Cape Town · 2023</p>
-        <h3>Mapping Cape Town’s coastline above and below the waterline</h3>
-        <p>Terrestrial and hydrographic LiDAR fused into one continuous surface, so the shoreline is mapped without a gap at the water’s edge.</p>
-      </article>
-      <article class="card glass lift" data-r data-glow style="--i:2">
-        <div class="miniflow" aria-hidden="true"><span>Scan</span><span>→</span><span>Register</span><span>→</span><span>Deliver</span></div>
-        <p class="meta">Laser scanning · Cape Town · 2020 – 2021</p>
-        <h3>3D scanning buildings for survey firms</h3>
-        <p>Scanned a building for a Horts Geo-Solutions client, and worked the 3D scanner and total station on a Lloyd &amp; Hill Inc. project.</p>
-      </article>
     </div>
   </div>
 </section>
 
-<section class="sec" id="about" aria-labelledby="about-title">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker" data-r>About</p>
-      <h2 class="h2" id="about-title" data-r>Registered, licensed, <em>qualified</em></h2>
-    </div>
-    <div class="about">
-      <div class="about-copy" data-r>
-        <p>I’m Richard, a geomatics engineer based in Raithby in the Western Cape. I trained as a land surveyor at the University of Cape Town, made the Dean’s Merit List three years running, and stayed on for a master’s in geomatics.</p>
-        <p>That master’s took me to Antarctica, where I planned and flew a drone radar survey of the Fimbul Ice Shelf and built the processing to go with it. I like jobs where the data has to be collected first, and collected properly.</p>
-        <div class="facts">
-          <div><b><span data-count="28">28</span></b><span>survey flights as pilot in command in Antarctica</span></div>
-          <div><b>1 of 10</b><span>volunteers picked from 98 for the FIG Congress 2026</span></div>
-          <div><b><span data-count="91">91</span>%</b><span>for Surveying 3 at UCT</span></div>
-          <div><b>3×</b><span>Dean’s Merit List, 2021 to 2023</span></div>
-        </div>
-        <div class="hero-cta">
-          <a class="btn" data-magnet href="assets/Richard-Ribbans-CV.pdf" download="Richard-Ribbans-CV.pdf">Download CV
-            <svg class="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a>
-          <a class="btn" data-magnet href="https://www.linkedin.com/in/richard-ribbans-9211b8159" target="_blank" rel="noopener">LinkedIn
-            <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-        </div>
-      </div>
-      <div class="cred glass" data-r data-glow style="--i:1">
-        <h3 class="col-h">Registrations and qualifications</h3>
-        <ul class="reg">
-          <li>
-            <h3>Candidate Geomatics Practitioner: Land Survey Professional</h3>
-            <p>South African Geomatics Council · In training · since June 2024</p>
-            <span class="no">Reg. no. CGPrLS 0981</span>
-          </li>
-          <li>
-            <h3>Remote Pilot Certificate</h3>
-            <p>South African Civil Aviation Authority · Multirotor, VLOS · August 2024</p>
-          </li>
-          <li>
-            <h3>MSc in Engineering, specialising in Geomatics</h3>
-            <p>University of Cape Town · 2024 – 2025</p>
-          </li>
-          <li>
-            <h3>BSc (Hons) Geomatics</h3>
-            <p>University of Cape Town · 2019 – 2023</p>
-          </li>
-        </ul>
-        <h3 class="col-h gap">Software</h3>
-        <ul class="tools">
-          <li>ArcGIS Pro</li><li>QGIS</li><li>Pix4D</li><li>Agisoft Metashape</li><li>CloudCompare</li>
-        </ul>
-      </div>
-    </div>
-
-    <figure class="quote glass" data-r data-glow>
-      <blockquote>Professionalism, reliability, and a strong work ethic</blockquote>
-      <figcaption>From Richard’s reference letter, FIG2026 Local Organising Committee, June 2026</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="contact" id="contact" aria-labelledby="contact-title">
+<section class="contact" aria-labelledby="cta-title">
   <div class="wrap">
     <div class="contact-in" data-r data-glow>
-      <p class="kicker">Contact</p>
-      <h2 id="contact-title">Got a site that needs <em>measuring?</em></h2>
-      <p>Email me with these three things and I’ll come back with a quote or a few questions.</p>
-      <ul class="brief">
-        <li>Where the site is (an address or erf number)</li>
-        <li>What you need: a boundary, a site plan, a drone survey, a scan</li>
-        <li>When you need it by</li>
-      </ul>
+      <p class="kicker">Get started</p>
+      <h2 id="cta-title">Got a site that needs <em>measuring?</em></h2>
+      <p>Tell me where it is and what you need, and I’ll come back with a quote.</p>
       <div class="mailrow">
-        <a class="btn btn-primary" data-magnet href="mailto:ricrib@hotmail.co.za?subject=Survey%20quote%20request&amp;body=Site%20location%3A%0AWhat%20needs%20surveying%3A%0AWhat%20you%20need%20back%20(plan%2C%20model%2C%20report)%3A%0ADeadline%3A%0A">Request a quote
-          <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-        <button class="btn" id="copy" type="button" data-email="ricrib@hotmail.co.za"><span id="copy-label" aria-live="polite">Copy email</span></button>
-        <a class="btn" data-magnet href="https://www.linkedin.com/in/richard-ribbans-9211b8159" target="_blank" rel="noopener">LinkedIn
-          <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <a class="btn btn-primary" data-magnet href="contact.html">Request a quote <svg class="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" data-magnet href="services.html">See services</a>
       </div>
-      <p style="color:#7C93A2;font-size:.95rem">ricrib@hotmail.co.za · Raithby, Western Cape</p>
     </div>
   </div>
 </section>
